@@ -1,0 +1,516 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage[none]{hyphenat} % brak przenoszenia wyrazów
+\usepackage{geometry}
+\newgeometry{tmargin=2.5cm, bmargin=2.5cm, lmargin=2.5cm, rmargin=2.5cm}
+\usepackage{indentfirst} % wcięcie w pierwszej linijce akapitu
+\usepackage[normalem]{ulem} %podkreślenia tekstu
+
+\makeatletter 
+\theoremstyle{definition}
+\newtheorem{definition}{Definicja}[section]
+\newtheorem{tw}{Twierdzenie}[section]
+\newtheorem{war}{Warunek}[section]
+
+
+
+\begin{document}
+\sloppy % brak przenoszenia wyrazów
+
+\textsc{Abstract} Jak przypomina nam Wielki Kryzys Finansowy, ekstremalne zmiany w poziomie i zmienność cen aktywów są kluczowymi cechami rynków finansowych. Zjawiska te trudno jest określić ilościowo za pomocą tradycyjnych podejść, które określają ekstremalne ryzyko jako pojedyncze zdarzenie rzadkie oderwane od zwykłej dynamiki. Analiza multifraktyczna, której wykorzystanie w finansowaniu znacznie się rozwinęło w ciągu ostatnich piętnastu lat, ujawnia, że szeregi cenowe obserwowane w różnych horyzontach czasowych wykazują kilka głównych postaci niezmienności skali. Opierając się na tych prawidłowościach, naukowcy opracowali nową klasę wieloprędkościowych procesów, które umożliwiają ekstrapolację zdarzeń o wysokiej częstotliwości do niskiej częstotliwości i generują dokładne prognozy zmienności aktywów. Nowe modele zapewniają zorganizowaną strukturę do badania prawdopodobnego wpływu wielkości i ceny zdarzeń, które są bardziej ekstremalne niż te, które obserwowano w przeszłości.
+
+\section{Wstęp}
+
+Modelowanie fraktalne wykorzystuje zasady niezmienności do ekonomicznego wyznaczania złożonych obiektów w wielu skalach. Okazało się, że ma to wielkie znaczenie w matematyce i naukach przyrodniczych, co ilustruje ten problem. Fraktale oferują także ogromne korzyści w dziedzinie finansów, w szczególności w zakresie modelowania cen papierów wartościowych będących w obrocie, obliczania ryzyk związanych z portfelami finansowymi, zarządzania ekspozycjami instytucji lub wyceny pochodnych papierów wartościowych. Korzyści te powinny stać się bardziej widoczne, ponieważ coraz popularniejsze staje się przyjęcie metod fraktalnych przez przemysł finansowy. Dziedziny finansów i ekonomii również odgrywają szczególną rolę w historii fraktali intelektualnych. Benoït Mandelbrot jako pierwszy odkrył dowody na zachowanie fraktalne pod względem zwrotów finansowych, dochodów gospodarstw domowych i majątku gospodarstw domowych pod koniec lat 50. i na początku lat 60., a następnie znalazł podobne wzorce w liniach brzegowych, trzęsieniach ziemi i innych zjawiskach naturalnych. Obserwacje te spowodowały rozwój fraktalnej i multifraktycznej geometrii natury ([M82])
+
+Na rynkach finansowych kluczowe znaczenie ma rozkład zmian cen, ponieważ określa on ryzyko, a także potencjalne zyski pozycji lub portfela aktywów. Różni inwestorzy mogą mierzyć zmiany cen na różnych horyzontach. Na przykład sprzedawca wysokiej częstotliwości może spojrzeć na zmiany cen w mikrosekundach, podczas gdy fundusz emerytalny lub wyposażenie uniwersyteckie może mieć horyzonty miesięcy, lat lub dekad. Badacze odpowiednio zbadali właściwości niezmienności w rozkładzie zmian cen obserwowanych w różnych przyrostach czasu. Francuski ekonomista Jules Regnault (1863) mógł być pierwszym, który zaobserwował, że odchylenie standardowe zmiany ceny w przedziale czasowym długości $\Delta t$ skaluje się jako pierwiastek kwadratowy z $\Delta t ([R])$. Ta obserwacja motywuje Louisa Bacheliera ([Ba]) do sformalizowania definicji ruchu Browna i zaproponowania go jako możliwego modelu ceny akcji. To znaczy, Bachelier postulował, że zmiany cen są Gaussa, identycznie dystrybuowane i niezależne. Chociaż te założenia mają istotne ograniczenia, to Bachelier otworzył dziedzinę statystyki finansowej, która od tego czasu pozostaje żywa.
+
+
+Od połowy lat 90. naukowcy odkryli alternatywne formy niezmienności skali w zakresie zwrotów finansowych w oparciu o wieloprędkościowe skalowanie momentów. [G], [CFM] i [CF02] znaleźli dowody na to, że zmieniają się momenty bezwzględnej wartości ceny, $E(| p (t + \Delta t) - p (t) | q)$, skala jako funkcje mocy horyzontu $\Delta t$. Wielokresowe chwilowe skalowanie było do tej pory obserwowane w zjawiskach naturalnych, takich jak rozkład energii w turbulentnych przepływach i rozkład minerałów w skorupie ziemskiej. Te fizyczne prawidłowości można modelować za pomocą środków wieloczynnikowych ([M74]). Obserwacja skracania momentów w dochodach finansowych zmotywowała naukowców do skonstruowania pierwszej rodziny dyfuzorów multifraktycznych ([CFM], [CF01], [BDM]). Procesy te są oszczędne i dobrze wychwytują grube ogony, długą pamięć w zmienności i skalowanie momentów finansowych serii ([CF01], [CF04], [CF]).
+
+Główny przykład rozważany w badaniu, Markov-Switching Multifractal (MSM), zakłada, że wielkość zmiany ceny jest napędzana przez komponenty, które mają identyczne rozkłady, ale różnią się stopniem trwałości. Dynamikę każdego komponentu określa łańcuch Markowa z własnymi prawdopodobieństwami przejścia. MSM w ten sposób konstruuje miarę wieloczynnikową stochastycznie w czasie, co poprawia wcześniejsze pomiary wielofraktyczne z ustalonymi wcześniej datami przełączania. Dynamiczna definicja MSM pozwala na przyjęcie potężnych metod szacowania i filtrowania. MSM generuje dokładne prognozy warunkowego rozkładu zwrotów, a zatem potencjału wzrostowego i ryzyka związanego z pogorszeniem pozycji.
+
+Fraktale zapewniają naturalną matematyczną strukturę do modelowania dużych ryzyk. Wspólnym podejściem w finansowaniu jest przedstawienie ceny aktywów jako sumy dyfuzji Ito i procesu przeskoku. Dyfuzja opisuje "zwykłe" fluktuacje, podczas gdy skoki mają uchwycić "rzadkie zdarzenia". Trudności w empirycznej implementacji takich podejść są oczywiste. Ponieważ rzadkie zdarzenia są modelowane jako nieodłącznie różne od regularnych odmian, wnioskowanie o rzadkich zdarzeniach musi być przeprowadzone na niewielkim zestawie obserwacji, a zatem jest wysoce nieprecyzyjne. Co ważne, badacze chcieliby zrozumieć konsekwencje dla cen aktywów zdarzeń, które nigdy wcześniej nie były obserwowane ("efekty peso" [R88], [B06], [G12], [W], [IM]). Wnioskowanie statystyczne na pustym zestawie jest jednak trudnym ćwiczeniem!
+
+Modelowanie fraktalne oferuje niezmienność skali jako rozwiązanie tego dylematu. Jest to zatem obiecujące narzędzie dla zawodu, który staje się coraz bardziej świadomy znaczenia rzadkich zdarzeń. Właściwości skali pozwalają badaczom modelować wszystkie zmiany cen za pomocą jednego mechanizmu generowania danych. W konsekwencji modele skonstruowane z wykorzystaniem zasad fraktali są niezwykle oszczędne. Niewielka liczba dobrze zidentyfikowanych parametrów, w połączeniu z testowalnymi założeniami dotyczącymi niezmienności skali, określa dynamikę cen we wszystkich skalach czasowych. Ścisła specyfikacja rzadkich zdarzeń, nawet bardziej ekstremalnych niż zaobserwowano w istniejących danych, jest naturalnym wynikiem fraktalnego podejścia do modelowania cen finansowych.
+
+Organizacja papieru jest następująca. Sekcja 2 omawia wczesne modele fraktalne i przegląda fraktalne prawidłowości na rynkach finansowych. W rozdziale 3 przedstawiono model multifraktalny Markov-Switching i jego zastosowania empiryczne. Sekcja 4 analizuje konsekwencje wieloprędkościowe dla cen. Sekcja 5 kończy.
+
+\section{Fraktale na rynkach finansowych}
+
+\subsection{Procesy samopodobne}
+Niech $P(t)$ oznacza cenę aktywów finansowych (tj ceny akcji, walut) w czasie $t$. Niech $p(t)$ to logarytm. Logarytmiczny zwrot wartości aktywów w czasie $\Delta t$ jest określony przez:
+$$p(t+\Delta t)-p(t).$$
+
+Od ponad wieków jednym z wiodących tematów w finansach jest zrozumienie zwrotów wartości aktywów.
+
+W swojej rozprawie doktorskiej z 1900 r. Francuski matematyk Bachelier wprowadził wczesną definicję ruchu Browna jako modelu ceny akcji. %%%%([Ba]) 
+Jeśli $p(t)$ podąża za ruchem Browna z dryftem, to powrót $p(t + \Delta t) - p (t)$ ma rozkład Gaussa ze średnią $\mu \Delta t$ i wariancją $\sigma ^2 \Delta t$, lub bardziej zwięźle
+$$p(t + \Delta t) -p(t) = dN(\mu \Delta t; \sigma ^2 \Delta t)$$
+Wniosek Browna przeniknął współczesną teorię finansów, a zwłaszcza podejście Black-Merton-Scholes'a do wyceny w czasie ciągłym ([BS], [M]). Jego trwały sukces wynika ze spójności z koncepcjami finansowymi braku arbitrażu i efektywności rynkowej. Jednak trudności empiryczne z ruchem Browna stały się widoczne w miarę upływu czasu.
+
+Na przełomie pięćdziesiątych i sześćdziesiątych postępy w technologii komputerowej umożliwiły przeprowadzenie dokładniejszych testów hipotez Bacheliera. W serii przełomowych artykułów, Benoıt Mandelbrot ([M63], [M67]) odkrył główne odstępstwa od ruchu Browna w seriach towarowych, giełdowych i walutowych. Jego główną obserwacją było to, że ogony rozkładu zwrotów są grubsze niż w przypadku ruchu Browna.
+
+Benoit Mandelbrot zrozumiał, że zjawisko to nie było zwykłą statystyczną ciekawostką, jak sugerowali niektórzy badacze, ale poważną porażką paradygmatu Browna. W kategoriach laika, ekstremalne zmiany cen są kluczowymi cechami rynków finansowych, których ruch Browna nie może uchwycić. Ponieważ celem zarządzania ryzykiem jest ochrona instytucji finansowych przed burzami, niedoszacowanie wielkości tych burz, jak czyni to cienki ogoniasty model Browna, jest receptą na katastrofę finansową, panikę i bankructwo.
+Wydarzenia takie jak Wielki Kryzys po czarnym czwartku przypomina jak ważne jest dobranie odpowiedniego modelu zwrotu stóp %moje
+
+\begin{definition}[\textsc{Procesy samopodobne}] 
+Proces $p(t)$, gdzie $t \in \mathbb{R}_{+}$ jest samopodobny z indeksem $H$ jeśli wektor $\big(p(ct_1),\ldots,p(ct_n)\big)$ ma taki sam rozkład jak $\big(c^H p(t_1),\ldots, c^H p(t_n)\big)$, lub bardziej zwięźle: 
+\begin{equation}
+\label{eq:1}
+\big( p(ct_1),\ldots,p(ct_n) \big) \stackrel{d}{=} \big(c^H p(t_1),\ldots, c^H p(t_n)\big)
+\end{equation}
+dla każdego $c>0$, $n>0$, oraz $t_1,\ldots ,t_n \in \mathbb{R}_{+}$
+\end{definition}
+
+Ruch Browna spełnia równanie (\ref{eq:1}) z indeksem $H=\frac{1}{2}$
+
+Stabilne procesy Paula Levy'ego ([L24]) są podobne do siebie z indeksem $H \in (\frac{1}{2}, + \infty)$. Ich przyrosty są niezależne i mają ogon Paretiana:
+\begin{equation}
+\label{eq:2}
+\mathbb{P} \lbrace \vert p(t+ \Delta t)-p(t) \vert \sim  K_{\alpha}\Delta t x^{-\alpha} \rbrace
+\end{equation}
+gdzie $x \to +\infty$, $\alpha = \frac{1}{H} \in (0;2)$ oraz $K_{\alpha}$ jest dodatnią stałą. Jak pokazuje  (\ref{eq:2}) procesy L mają grubsze ogony niż ruchy Browna i dlatego są bardziej podatne na duże zmiany cen ([M63], [M67]). Jedną z trudności w procesie L-stabilnym jest jednak to, że mają one nieskończone wariancje, co jest sprzeczne z dowodami empirycznymi dostępnymi dla dużej liczby szeregów cenowych ([BG], [FR], [AB]). Co więcej, nieskończone wariancje stwarzają poważne trudności dla teorii finansowej, ponieważ większość literatury dotyczącej wyceny aktywów wykorzystuje wariancję względną bezpieczeństwa lub jej kowariancję z innymi papierami wartościowymi lub czynnikami jako główne miary ilościowe ryzyka (patrz np. [CV], [MK], [S], [T], [M]).
+
+Ułamkowe ruchy Browna reprezentują kolejną ważną klasę procesów samopodobnych ([K], [M65], [MV68]). Ułamkowy ruch Browna z początkową wartością $B_H (0) = 0$ można zdefiniować jako:
+$$B_H(t) = \frac{1}{\Gamma(H+\frac{1}{2})} \bigg\lbrace \int_{-\infty}^{0} \big[(t-s)^{H-\frac{1}{2}} -(-s)^{H-\frac{1}{2}}\big], \mathrm{d} Z_s + \int_{0}^{t} (t-s)^{H-\frac{1}{2}}, \mathrm{d} Z_s \bigg\rbrace,$$
+gdzie $\Gamma$ oznacza gammę Eulera, $Z$ to standardowy ruch Browna i $H \in (0, \infty)$. Ułamkowy ruch Browna jet konstruowany przez przypisanie hiperbolicznych przyrostów do standardowego ruchu Browna, co generuje silną trwałość. 
+
+Niech
+\begin{equation}
+\label{eq:3}
+r_t = p(t)-p(t-1)
+\end{equation}
+oznacza zwrot w przedziale czasowym długości jednostki (np jeden dzień). Jeśli cena $p(t)$ podąża za ułamkowym ruchem Browna z indeksem samo-podobieństwa $H = \frac{1}{2}$, autokorelacja powrotna zmniejsza się w tempie hiperbolicznym:
+\begin{equation}
+\label{eq:4}
+Corr(r_t;t_{t+n}) \sim H(2H-1)n^{2H-2} \quad \text{dla} \; n \to \infty
+\end{equation}
+Silna zależność zwrotów wynikających z frakcyjnego ruchu Browna jest sprzeczna z dowodami empirycznymi. Rzeczywiście, duża część badań (np. [K53], [GM63], [F65]) pokazuje, że w szerokim zakresie częstotliwości próbkowania, zwroty aktywów wykazują zerową lub słabą autokorelację: $Corr (r_t, r_{t + n}) \approx 0$ dla wszystkich $n \neq 0$, co sugerują najprostsze formy efektywności rynkowej. Ponadto długa pamięć w zwrotach (\ref{eq:4}) jest teoretycznie niespójna z cenami arbitrażu w czasie ciągłym ([MS]), co czyni go nieprzyjemnym modelem cen finansowych. Integracja ułamkowa może być jednak przydatna do modelowania trwałości w rozmiarze zmian cen (np. [BBM], [HMS]).
+
+Oprócz wspomnianych niedociągnięć stabilnych procesów i ułamkowych ruchów Browna, procesy samopodobne ze stacjonarnymi przyrostami napotykają inną, wspólną trudność. Według (\ref{eq:1}), zwroty na różnych horyzontach powinny mieć identyczne rozkłady aż do renormalizacji skalarnej:
+\begin{equation}
+\label{eq:5}
+p(t+\Delta t)-p(t) \stackrel{d}{=} (\Delta t)^H p(1)
+\end{equation}
+Większość serii finansowych nie jest jednak dokładnie samopodobna, ale mają one grubsze ogony na krótszych horyzontach niż przewiduje to samopodobieństwo (\ref{eq:5}). Ta empiryczna obserwacja jest zgodna z intuicją ekonomiczną, że wyższe częstotliwości zwrotów są albo duże, jeśli pojawiły się nowe informacje, albo prawie zerowe. Z tego powodu procesy samopodobne nie mogą być w pełni zadowalającymi modelami zwrotów aktywów.
+
+\subsection{Dowody empiryczne na temat grubych ogonków i długiej pamięci}
+
+Po [M63] i [M67], pewna liczba badaczy mierzyła indeksy ogona zwrotnegów $\alpha$ i $\alpha^\prime$ określone przez
+$$\mathbb{P}(r_t>x)\sim Kx^{-\alpha}$$
+$$\mathbb{P}(r_t<-x)\sim K^{\prime}x^{-\alpha^{\prime}}$$
+gdy $x \to +\infty$, gdzie $K$ i $K^{\prime}$ są stałymi na $\mathbb{R}_{+}$. Wczesne badania dotyczące zwrotów finansowych były głównie parametryczne ([F63], [F65], [BG], [FR], [AB]). W latach 70-tych XX wieku statystycy opracowali precyzyjne techniki nieparametrycznej oceny indeksów ogona rozkładu ([Hi], [CDM]), a późniejsze analizy empiryczne potwierdziły, że indeksy ogona są skończone w szeregach finansowych (np. [KK], [ KSV], [PMM], [JD], [LP], [G09]). W większości badań mierzy się również $\alpha$ i $\alpha^{\prime}$ jako większe niż $2$. W związku z tym zwroty aktywów mają skończoną wariancję, zgodną z założeniami teorii finansowej.
+
+Na początku lat 90. XX wieku naukowcy odkryli dowody silnej trwałości w bezwzględnej wartości zwrotów ([D], [DGE]). Długa pamięć jest często definiowana przez hiperboliczny spadek funkcji autokorelacji, ponieważ opóźnienie przechodzi w nieskończoność. Dla każdej chwili $q \leq 0$ i każdej liczby całkowitej n, niech
+\begin{equation}
+\label{eq:6}
+p_q(n) = Corr(|r_t|^q, |r_{t+n}|^q)
+\end{equation}
+oznacza autokorelację w poziomach. Mówimy, że zasób wykazuje długą pamięć
+w rozmiarze zwrotów, jeśli $p_q (n)$ jest hiperboliczne w $n$:
+\begin{equation}
+\label{eq:7}
+p_q(n) \propto c_q n^{-\delta(q)}
+\end{equation}
+gdy $n \to +\infty$.
+
+\begin{center}
+[FIGURE 1]
+\end{center}
+
+\begin{center}
+[FIGURE 2]
+\end{center}
+
+Te ważne cechy danych finansowych można zaobserwować dzięki przypadkowej obserwacji standardowych zwrotów aktywów. Ryc. 1, Panel A, przedstawia serię kursów japońskiego jena / dolara amerykańskiego z 1973 r., Po upadku systemu stałych kursów walutowych Bretton-Woods, do dnia dzisiejszego. Seria jenów zawiera 9751 obserwacji zwrotnych. Seria pokazuje zarówno grube ogony, jak i klastery zmienności w różnych skalach czasowych, w tym w okresach tak długich jak kilka lat, jak ma to miejsce w obecności długiej pamięci. Panel B pokazuje te same cechy w długich seriach czasowych 222,780 codziennych indeksów giełdowych USA uzyskanych z Centrum Badań nad Bezpiecznymi Cenyami (CRSP) Uniwersytetu w Chicago.
+
+Na rysunku 2 wyświetlamy autokorelację kwadratów zwrotów $p_2(n)$ na osi pionowej w funkcji długości opóźnienia n na osi poziomej. Dla obu serii wykresy są w przybliżeniu liniowe na podwójnej skali logarytmicznej, co wskazuje, że $p_2(n)$ jest hiperboliczne w $n$. Kurs wymiany waluty jena / dolara i seria indeksów amerykańskich giełd wykazują zatem dużą pamięć w rozmiarze zmian cen.
+
+\subsection{Multifractal scaling (Multofraktalne skalowanie?)}
+
+W połowie lat 90. obserwacja, że zwroty aktywów wykazują zarówno gruby ogon, jak i długotrwałą zmienność pamięci, skłoniły badaczy do rozważenia, że ceny aktywów mogą wykazywać multifraktalne skalowanie momentów (multifractal moment-scaling).
+\begin{equation}
+\label{eq:8}
+\mathbb{E}(|p(t+\Delta t) - p(t)|^q)=c(q) t^{\tau (q)+1}
+\end{equation}
+dla każdego (skończonego) momentu $q$ i przedziału czasu $\Delta t$. 
+Samopodobny proces spełnia (\ref{eq:8}), z $\tau (q)=H_q-1$. Uważa się, że proces $p$ jest ściśle multifraktalny, jeśli (\ref{eq:8}) zachowuje się dla ściśle wklęsłej funkcji $\tau (q)$.
+
+\begin{center}
+[FIGURE 3]
+\end{center}
+
+Ścisłą multifractalność zaobserwowano w dziedzinach tak różnych, jak mechanika płynów, geologia i astronomia. Teraz mamy również mocne dowody na ścisłe multifrakcyjne skalowanie momentów w różnych seriach finansowych, w tym w walutach i akcjach ([CF02], [CFM], [G], [VA]). Jako przykład, ilustrujemy na wykresie 3 skala czasowa kursu waluty jena / dolara amerykańskiego i indeksu giełdowego CRSP. Panele na rysunku wykreślają przedział podziału $\Delta t$ na osi poziomej w stosunku do empirycznej estymacji $E|p(t+\Delta t)-p(t)|^q$ na osi pionowej.Empiryczne oszacowanie uzyskuje się przez pobranie próbki analogu (\ref{eq:8}), jak wyjaśniono w podpisie na rysunku, dla różnych momentów $q$. Kropkowane linie na rysunku reprezentują skalowanie implikowane przez ruch Browna, który spełnia samopodobieństwo z $H=\frac{1}{2}$. Oba panele pokazują dowody skalowania momentu, które są liniowe w $\Delta t$, ale współczynniki skalowania $\tau (q)$ nie mogą być uchwycone jako funkcja liniowa pojedynczego indeksu $H$. Te empiryczne fakty są cechami skalowania multofraktalnego.
+
+Matematyczne modelowanie obiektów multifraktycznych skupiło się najpierw na miarach losowych, skonstruowanych przez iteracyjną realokację masy nad domeną (np. [M74]). Jednym z najprostszych przykładów jest miara dwumianowa na przedziale jednostki $[0, 1]$, którą wyprowadzamy jako granicę kaskady multiplikatywnej. Rozważmy stały rozkład $m_0 \in [\frac{1}{2}, 1]$ Bernoulliego (zwany także dwumianowym), przyjmując wysoką wartość $m_0$ lub niską wartość $1-m_0$ z równym prawdopodobieństwem. W pierwszym kroku kaskady wyciągamy dwie niezależne wartości $M_0$ i $M_1$ z rozkładu dwumianowego. Definiujemy miarę $\mu_1$, rozkładając równomiernie masę $M_0$ na lewy podprzedział $[0, \frac{1}{2}]$, a masę $M_1$ na prawy podprzedział $[\frac{1}{2}, 1]$. Gęstość $\mu_1$ jest funkcją stopniową.
+
+W drugim etapie kaskady narysujemy cztery niezależne zmienne z rozkładu dwumianowego $M_{0,0}$, $M_{0,1}$, $M_{1,0}$, $M_{1,1}$. Podzielmy przedział $[0, \frac{1}{2}]$ na dwa podprzedziały o jednakowej długości; lewemu podprzedziałowi $[0, \frac{1}{4}]$ przydziela się frakcję $M_{0,0}$ dla $\mu_1 [0, \frac{1}{2}]$, podczas gdy prawy podprzedział $[\frac{1}{4}, \frac{1}{2}]$ otrzymuje frakcję $M_{0,1}$. Stosując podobną procedurę do $[\frac{1}{2},1]$, uzyskujemy miarę $\mu_2$ taką, że:
+\begin{center}
+\begin{tabular}{l l}
+$\mu_2[0, 1/4] = M_0 M_{0,0}, $ &
+$\mu_2[1/4, 1/2] = M_0 M_{0,1}, $\\
+$\mu_2[1/2, 1/4] = M_1 M_{1,0}, $&
+$\mu_2[1/4, 1] = M_1 M_{1,1}. $\\
+\end{tabular}
+\end{center}
+Iteracja tej procedury generuje nieskończoną sekwencję losowych miar $(\mu_k)$, które słabo zbiegają się do miary dwumianowej $\mu$.
+
+Rozważmy przedział diadyczny $[t,t+2^{-k}]$, gdzie $t=\sum_{i=1}^{k} {\eta_i 2^{-i}}$ i $\eta_1,\ldots ,\eta_k \in \{0,1\}$. Miarą przedziału jest
+$$\mu[t,t+2^{-k}]=M_{\eta_1}, M_{\eta_1, \eta_2},\ldots , M_{\eta_1,\dots , \eta_k}\Omega$$
+gdzie $\Omega$ jest zmienną losową wyznaczoną przez zmianę masy wygenerowaną przez stopnie $k+1, \ldots, \infty$ kaskady. Równanie (\ref{eq:3}) implikuje to
+$$\mathbb{E}(\mu [t,t+2^{-k}]) = c_q [\mathbb{E}(M^q)]^k = c_q(\Delta t)^{\tau_{\mu}(q)+1} $$
+gdzie $c_q = \mathbb{E}(\Omega ^q)$, $\Delta t = 2^{-k}$ oraz $\tau_{\mu}(q) = -\log_2[\mathbb{E}(M^q)]-1$. Momenty miary ograniczenia przedziału diadycznego są zatem potęgą jej długości $\Delta t$, podobne do relacji skalowania (\ref{eq:8}).
+
+Rozszerzenie multifraktalności z losowych pomiarów na procesy stochastyczne zostało po raz pierwszy osiągnięte w Multifractal Model Asset Returns (Multifraktalny Model Stóp Zwrotu) ("MMAR", [CFM], [CF02]). MMAR zapewnia klasę dyfuzji zgodną ze skalowaniem multifraktalnym (2.8). W MMAR cena aktywów jest określana przez połączenie ruchu Browna z niezależną deformacją czasową:
+
+\textsc{\uline{\emph{KOMENTARZ:}} Liczba $t \in [0,1]$ jest nazywana diadyczną, jeśli $t=1$ lub $t=\eta_1 2^{-1}+\ldots + \eta_k 2^{-k}$ dla skończonej $k$ i $\eta_1,\ldots ,\eta_k \in \{0,1\}$. Przedział diadyczny ma diadyczne punkty końcowe.}
+
+gdzie $\theta$  jest kumulatywnym rozkładem miary multifraktalnej $\mu$. Cechą charakterystyczną MMAR jest zastosowanie multifraktalnej deformacji czasowej. MMAR jest zatem powiązany z podporządkowaniem (subordination), pojęciem wprowadzonym w analizie harmonicznej przez Bochnera ([B55]) i zastosowanym po raz pierwszy przez Clarka ([Cl]) w literaturze finansowej. W oryginalnym sformułowaniu [B55] i [Cl], podwładny (\textsl{subordinator}) $\theta (t)$ jest prawostronnie ciągłym procesem, który ma niezależne i jednorodne przyrosty.
+
+Podczas gdy pierwotne założenia dotyczące niezależności i homogeniczności okazały się zbyt restrykcyjne dla zastosowań finansowych, stochastyczne zmiany czasu są ogólnie atrakcyjne dla modelowania cen finansowych (patrz np. [AG]). Określając ewolucję losowego czasu handlowego jako multifraktalnego, MMAR dostarcza empirycznie realistyczną klasę modeli, które w oszczędny sposób wychwytują grube ogony i zmienności długiej pamięci w szeregach finansowych.
+
+Proces cenowy MMAR dziedziczy właściwości skalowania momentów miary, w tym sensie, że $\mathbb{E}(|p(t+\Delta t) - p(t)|^q)=c(q) t^{\tau (q)+1}$ na dowolnym przedziale diadycznym $[t, t+\Delta t]$. Te ograniczenia momentów są podstawą estymowania i testowania ([CFM], [CF02], [L08]). MMAR zapewnia dobrze zdefiniowaną strukturę stochastyczną do analizy skalowania momentów (\textsl{moment-scaling}). W [CF02] sprawdziliśmy, że skrócone (\textsl{moment-scaling}) w czasie właściwości zwrotów finansowych, takich jak te pokazane na rysunku 3, są zgodne z zakresem wariacji przewidzianych przez MMAR. Zgodnie z jego zdolnością do wyjaśniania momentów zwrotów przy różnych częstotliwościach, MMAR wychwytuje nieliniowe zmiany bezwzględnej gęstości zwrotów obserwowanych w różnych horyzontach czasowych ([L01]).
+
+Skalowanie momentu MMAR wywołało rozległe zainteresowanie ekonofizyką (na przykład [LB]). Są one również związane z ostatnimi badaniami ekonometrycznymi nad zmiennością mocy, które interpretują momenty powrotu na różnych częstotliwościach w kontekście tradycyjnych przeskoków dyfuzyjnych (na przykład [ABDL], [BNS]). Ponadto ostatnie badania potwierdzają, że pojawianie się transakcji na rynkach finansowych jest dobrze opisane za pomocą multifraktalnego procesu prowadzenia pojazdu (\textsl{multifractal driving process}) ([CDS]), który potwierdza gospodarczą motywację deformacji czasu $\theta (t)$ jako multifraktalnego "czasu handlowego".
+
+Pomimo swoich atrakcyjnych właściwości MMAR jest niewygodny dla aplikacji ekonometrycznych z powodu dwóch cech miary podstawowej: (a) Rekurencyjna realokacja masy w całym przedziale czasu nie pasuje do standardowych narzędzi szeregów czasowych; oraz (b) środek ograniczający zawiera pozostałą siatkę chwil, która czyni ją niestacjonarną.(\textsl{(a) the recursive reallocation of mass on an entire time-interval does not fit well with standard time series tools; and (b) the limiting measure contains a residual grid of instants that makes it nonstationary}) Rozwiązanie tych problemów przedstawiono w następnej sekcji.
+
+\section{The Markov-Switching Multifractal (MSM) (Multiczęściowy Model Markowa)}
+
+Multifractal Markov Switching(MSM) jest w pełni stacjonarną dyfuzją multifraktalną ([CF01], [CF04], [CF]), która w oszczędny sposób wykorzystuje dowolnie wiele składników o różnych czasach trwania. MSM buduje pomost między multifraktalizmem a Markov-Switching, a zatem pozwala na stosowanie potężnych metod statystycznych.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Definicja w czasie dyskretnym}
+Zakładamym że $t = 0, 1, ..., \infty$. Rozważamy:
+\begin{itemize}
+\item wektor stanu Markowa pierwszego rzędu $M_t = (M_{k, t})_{1 \leq k \leq \bar{k}} \in \mathbb{R}^{\bar{k}}_+$
+\item zmienną losową $M \geq 0$ ze średnią $\mathbb{E}(M) = 1 $
+\end{itemize}
+
+Każdy $(M_{k, t})_{1 \leq k \leq \bar{k}}$ jest samodzielnym procesem Markowa, który jest skonstruowany w czasie w następujący sposób:
+
+Dla znanego  $M_{k, t-1}$
+
+\begin{tabular}{l l}
+$M_{k, t}$ jest brany z rozkładu M & z prawdopodobieństwem $\gamma_k$\\
+$M_{k, t} = M_{k, t-1}$ & z prawdopodobieństwem $1 - \gamma_k$\\
+\end{tabular}
+
+Prawdopodobieństwo przejścia jest określone przez
+\begin{equation}
+\label{3.1}
+\gamma_k = 1 - (1 - \gamma_1)^{b^k - 1}
+\end{equation}
+
+
+gdzie $\gamma_1 \in (0, 1)$ i $b \in (1, \infty)$
+
+W praktyce wykorzystuje się dwa typy multiczęściowych modeli Markowa, jeden z czynnikami o rozkładzie dwupunktowym, drugi – normalnym. Są one bardzo oszczędnie parametryzowane, a ilość parametrów nie zależy od zakładanej maksymalnej częstości bodźdców działających na system.  W pierwszym przypadku zakłada się, że czynnik $M$ może przyjąć wartość $m_0$ albo $2 - m_0$ z jednakowym prawdopodobinestwem. Model posiada wówczas tylko cztery parametry $\psi \equiv (m_0, \sigma, b, \gamma_{\bar{k}})$ nawet przy dużej ilości stanów. Parametry modelu można estymować metodą największej wiarygodności (CF04).
+
+Zwroty $r_t = p_t - p_{t-1}$ są zadane przez 
+\begin{equation}
+\label{3.2}
+r_t = \mu + \sigma (M_t)\epsilon_t,
+\end{equation}
+gdzie $\mu \in R$ i $ \bar{\sigma} \in R_{++}$ są stałe, $\{\epsilon_t\}_{t>0}$ są niezależnymi zmiennymi z rozkładu Gaussa, a zmienność w czasie $t$ jest zadana wzorem: 
+\begin{equation}
+\label{3.3}
+\sigma(M_t) = \bar{\sigma} (\prod_{k=1}^{\bar{k}} M_{k, t})^{1/2} 
+\end{equation} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Definicja w czasie dyskretnym}
+Zakładamym że $t = 0, 1, ..., \infty$. Rozważamy:
+\begin{itemize}
+\item wektor stanu Markowa pierwszego rzędu $M_t = (M_{k, t})_{1 \leq k \leq \\bar{k}} \in \mathbb{R}^{\bar{k}}_+$
+\item zmienną losową $M \geq 0$ ze średnią $\mathbb{E}(M) = 1 $
+\end{itemize}
+W niniejszym badaniu dla uproszczenia załóżmy, że M ma rozkład Bernoulliego przyjmując albo wysoką wartość $m_0$, albo niską wartość $2-m_0$ z równym prawdopodobieństwem, gdzie $m_0$ jest stałym elementem przedziału $[1,2]$. Zakładamy również, że komponenty $M_{1,t}, M_{2,t}, ..., M_{\bar{k},t}$ są niezależne niezależnie od k.
+
+Każdy $(M_{k, t})_{1 \leq k \leq \tilde{k}}$ jest samodzielnym procesem Markowa, który jest skonstruowany w czasie w następujący sposób:
+
+Dla znanego  $M_{k, t-1}$
+
+\begin{tabular}{l l}
+$M_{k, t}$ jest brany z rozkładu M & z prawdopodobieństwem $\gamma_k$\\
+$M_{k, t} = M_{k, t-1}$ & z prawdopodobieństwem $1 - \gamma_k$\\
+\end{tabular}
+Prawdopodobieństwo przejścia jest określone przez
+\begin{equation}
+\label{3.1}
+\gamma_k = 1 - (1 - \gamma_1)^{b^k - 1}
+\end{equation}
+gdzie $\gamma_1 \in (0, 1)$ i $b \in (1, \infty)$. Definicja implikuje, że $\gamma_1<\ldots<\gamma_{\bar{k}}$, więc komponenty o niskim indeksie $k$ są bardziej trwałe niż dla wyższych $k$. Jeśli parametr $\gamma_1$ jest mały w porównaniu do jedności, prawdopodobieństwa przejścia $\gamma_k\sim \gamma_1 ^{b^{k-1}}$ rosną w przybliżeniu z prędkością geometryczną b dla niskich wartości $k$; tempo wzrostu $\gamma_k$ ostatecznie zwalnia dla wysokich wartości $k$ tak, że $\gamma_k$ pozostaje niższe niż jedność.
+
+Przyjmujemy, że zwroty $r_t = p_t - p_{t-1}$ są zadane przez 
+\begin{equation}
+\label{3.2}
+r_t = \mu + \sigma (M_t)\epsilon_t,
+\end{equation}
+gdzie $\mu \in R$ i $ \tilde{\sigma} \in R_{++}$ są stałe, $\{\epsilon_t\}_{t>0}$ są niezależnymi zmiennymi z rozkładu Gaussa, a zmienność w czasie $t$ jest zadana wzorem: 
+\begin{equation}
+\label{3.3}
+\sigma(M_t) = \bar{\sigma} (\prod_{k=1}^{\bar{k}} M_{k, t})^{1/2} 
+\end{equation}  
+Nazywamy tą konstrukcję Markow-Switching Multifractal (MSM). Obserwujemy, że dla MSM proces $r_t$ jest stacjonarny z z bezwarunkową średnią $\mathbb{E}(r_t)=\mu$ i bezwarunkowym odchyleniem standardowym $\{ \mathbb{E}[(r_t-\mu)^2]\}^{\frac{1}{2}} = \bar{\sigma}$.
+
+Struktura multiplikatywna (\ref{3.3}) zachęca do modelowania wysokiej zmienności i wysokiej niestabilności wykazywanej przez finansowe szeregi czasowe. Składniki mają taki sam rozkład marginesów $M$, ale różnią się prawdopodobieństwami przejścia $\gamma_k$. Kiedy mnożnik o niskiej wartości k zmienia się, zmienność zmienia się w sposób nieciągły i ma wysoką trwałość. Ponadto mnożniki wysokiej częstotliwości wytwarzają znaczne wartości odstające.
+
+\begin{center}
+[FIGURE 4]
+\end{center}
+
+Rysunek 4 ilustruje budowę dwumianowego MSM. Trzy górne panele reprezentują ścieżkę próbkową składników lotności 
+$M_{k,t}$ dla $k$ zmieniających się od 1 do 3. Widzimy, że liczba przełączników rośnie wraz z $k$, co sugeruje (\ref{3.1}). Czwarty panel reprezentuje wariancję $\sigma^2(M_t) \equiv \bar{\sigma}^2 M_{1,t}\ldots M_{\bar{k},t}$ , gdzie $\bar{k}=8$ i $\bar{\sigma}=1$. Konstrukcja generuje cykle o różnych częstotliwościach, zgodnie z obserwacją empiryczną, że są niestabilnymi dziesięcioleciami i mniej niestabilnymi dziesięcioleciami, niestabilnymi latami i mniej zmiennymi latami, i tak dalej. MSM zapewnia zatem ścisły model zachowania zwrotów finansowych na różnych poziomach udokumentowanych w [DG] i [LZ]. Panel pokazuje również wyraźne szczyty i przerywane impulsy zmienności, które powodują efekt grubych ogonów. Ostatni panel ilustruje wpływ różnych częstotliwości na serię powrotną.
+
+W zastosowaniach empirycznych wygodnie jest oszacować parametry o tej samej wielkości. Ponieważ $\gamma_1 < \ldots < \gamma_{\bar{k}} <1<b$, wybieramy $\gamma_{\bar{k}}$ i $b$, aby określić zbiór prawdopodobieństw przejścia. Ogólnie, proces MSM z komponentami $\bar{k}$ jest w pełni sparametryzowany przez
+
+$$\psi \equiv (m_0, \bar{\sigma}, b, \gamma_{\bar{k}}) \in [1,2] \times \mathbb{R}_{++} \times (1, +\infty) \times (0,1) \times \mathbb{R}$$
+gdzie $m_0$ charakteryzuje rozkład mnożników, $\bar{\sigma}$ jest bezwarunkowym odchyleniem standardowym zwrotów, $b$ i $\gamma_{\bar{k}}$ definiują zbiór prawdopodobieństw przełączania, a~$\mu$~-~bezwarunkową średnią zwrotów. Liczbę składników $\bar{k} \in \mathbb{N}^\ast$ można również postrzegać jako dyskretny parametr MSM, a poniżej omawiamy sposób jego estymacji wraz z ciągłym wektorem $\psi$.
+
+\subsection{Filtering and Estimation}
+Ponieważ składowe $M_{k,t}$ mają rozkłady dwumianowe, wektor stanu $M_t$ przyjmuje $d=2^{\bar{k}}$ możliwych wartości $m^1,\ldots, m^d \in \mathbb{R}^{\bar{k}}_{+}$. Macierz przejścia $M_t$ jest z definicji $d \times d$ macierzą $A=(a_{i,j})_{1\leq i, j\leq d}$ z komponentami
+$$a_{i,j} = \mathbb{P}(M_{t+1}=m^j|M_t=m^i).$$
+Dla ogólnego łańcucha Markowa ze $d$ stanami, macierz przejścia zawiera $d^2$ elementów. Tak więc, na przykład, jeśli $d=2^8$ stanów, macierz przejścia zawiera $2^16 = 65,536$ parametrów, a oszacowanie jest generalnie niewykonalne przy obecnych metodach numerycznych. Dla porównania, proces zwrotu MSM z $\bar{k} = 8$ składowych i $2^8=256$ stanów jest w pełni zdefiniowany przez tylko pięć parametrów MSM oferuje w ten sposób oszczędną specyfikację wielowymiarowej przestrzeni stanów, co toruje drogę do statystycznej oceny i wnioskowania.
+
+Statystyk finansowy obserwuje zwroty rt, ale nie wektor stanu M. W związku z tym stara się obliczyć warunkowy rozkład prawdopodobieństwa $\prod_{t}=(\prod_{t}^{1},\ldots, \prod_{t}^{d} \in \mathbb{R}^{d}_{+}$, gdzie dla każdego $j \in \{1,\ldots, d\}$
+$$\prod_{t}^{j} \equiv \mathbb{P}(M_t=m^j|r_1,\ldots,r_t).$$
+
+W zależności od stanu zmienności, zwrot ma gęstość Gaussa $\omega_j)r_t)=n[(r_t-\mu)/\sigma(m^j)]/\sigma(m^j)$, gdzie $n(\cdot)$ oznacza gęstość standardowej rozkładu normalnego. Z reguły Bayesa wynika, że: 
+\begin{equation}
+\label{3.4}
+\prod_{t}^{j} \propto \omega_j(r_t) \mathbb{P}(M_t=m^j|r_1,\ldots,r_{t_1})
+\end{equation}
+lub $\prod_{t}^{j} \propto \omega_j(r_t) \sum_{i=1}^{d} a_{i,j} \mathbb{P}(M_{t-1}=m^i|r_1,\ldots,r_{t_1})$. Wektor $\prod_{t}$ jest zatem funkcja jego opóźnionej wartości i równocześnie zwrot $r_t$:
+\begin{equation}
+\label{3.5}
+\prod_{t} = \frac{\omega_j(r_t) \circ (\prod_{t-1}A)}{[\omega_j(r_t) \circ (\prod_{t-1}A)]\iota^{\prime}}
+\end{equation}
+gdzie $\omega(r_t) = [\omega_1 (r_t),\ldots,\omega_d (r_t)]$, $\iota = (1,\ldots ,1) \in \mathbb{R}^d$ oraz $x \circ y$ oznacza produkt Hadamarda $(x_1 y_1, \ldots, x_d y_d)$ dla każdego $x,y \in \mathbb{R}^d$. Wektor można zatem obliczać rekurencyjnie, jak to jest znane w modelach regime-switching ([H]). W zastosowaniach empirycznych wektor początkowy $\prod_{0}$ jest ustawiony równy rozkładowi ergodycznemu $\prod_{\infty}=\iota /d$ łańcucha Markowa $M_t$.
+
+Niech $L(r_t, \ldots, r_T; \psi)$ oznaczają funkcję gęstości prawdopodobieństwa szeregu czasowego $r_t, \ldots, r_T$ w modelu MSM z wektorem parametrów $\psi$. Z łatwością sprawdzimy, czy:
+\begin{equation}
+\label{3.6}
+\log L(r_t, \ldots, r_T; \psi) = \sum_{t=1}^{T}\log[\omega(r_t)\cdot (\prod_{t-1}A)].
+\end{equation}
+Dla stałego $\bar{k}$, estymator największej wiarygodności (ML),
+$$\hat{\psi} = \arg\max_{\psi}\log L(r_1, \ldots, r_T; \psi),$$
+jest zgodny i asymptotycznie normalny: $\sqrt{T}(\hat{\psi}-\psi) \stackrel{d}{\to} \mathcal{N}(0,V)$. Estymator ML jest asymptotycznie wydajny, w tym sensie, że żaden inny estymator nie ma mniejszej asymptotycznej macierzy wariancyjno-kowariancji $V$ (patrz np. [C]). W przypadku MSM, $\psi$ również dobrze wykonuje się w próbkach skończonych ([CF04]).
+
+Specyfikacje MSM o różnych wartościach $\bar{k}$ nie są zagnieżdżone, ale są określone przez taką samą liczbę parametrów dla każdego $\bar{k} \geq 2$. Porównanie ich prawdopodobieństw dostarcza zatem istotnych informacji o dobroci dopasowania. Standardowy test Vuonga ([V]), lub alternatywnie przystosowany do heteroskedastyczności, jest prostym i właściwym kryterium wyboru modelu, jak pokazano w [CF04] i [CF]. Filtrowanie i estymacja parametrów są zatem wyjątkowo wygodne w przypadku MSM.
+
+\subsection{Empiryczne szacowanie i prognozowanie.\\
+(Empirical Estimation and Forecasting).}
+
+Stosujemy MSM do serii kursów walutowych jena / dolara amerykańskiego zilustrowanych na rycinie 1. Dzienne zyski z logarytmu są obliczane na podstawie kursów walut rozpoczynających się w czerwcu 1973 r., Które kończą się na końcu naszej próby pod koniec marca 2012 r. Ogólnie seria zawiera 9751 obserwacji.
+
+\begin{center}
+[TABELA 1]
+\end{center}
+
+Tabela 1 przedstawia szacunki największej wiarygodności. Dla wygody ustawiamy parametr dryfu na zero: $\mu=0$. W panelu A, po [CF04] i [CFT], szacujemy cztery pozostałe parametry $M_0$, $\bar{\sigma}$, $\gamma_{\bar{k}}$ i $b$, dla wielu składniki $\bar{k}$ zmieniają się od $1$ do $12$. Pierwsza kolumna odpowiada standardowemu modelowi przełączania Markowa z tylko dwoma stanami lotności. Wraz ze wzrostem $\bar{k}$ liczba stanów wzrasta geometrycznie o $2^{\bar{k}}$. Istnieje ponad cztery tysiące stanów, gdy $\bar{k}=12$.
+
+Oszacowanie $m_0$ maleje monotonicznie o $\bar{k}$: wraz z dodawaniem kolejnych składników, w każdym $M_k$ wymagana jest mniejsza zmienność, aby dopasować się do wahań zmienności wykazywanych przez dane. Oszacowania $\bar{\sigma}$ różnią się w $\bar{k}$ bez określonego wzorca; ich standardowe błędy rosną wraz z $\bar{k}$, co jest zgodne z tym, że długoterminowe średnie są trudne do zidentyfikowania w modelach pozwalających na długie cykle zmienności. Następnie badamy parametry częstotliwości $\gamma_{\bar{k}}$ i $b$. Gdy $\bar{k}=1$, pojedynczy mnożnik ma czas trwania $1/\gamma_1 = 1/0,192$ z około 5 dni roboczych, co odpowiada jednemu tygodniowi kalendarzowemu. Wraz ze wzrostem współczynnika $k$, prawdopodobieństwo przełączenia mnożnika najwyższej częstotliwości rośnie, dopóki przełącznik nie pojawi się prawie raz dziennie dla dużego $\bar{k}$. W tym samym czasie szacunek b zmniejsza się równomiernie przy $\bar{k}$. Rosnąca liczba częstotliwości pozwala na wentylację trwania się zarówno do krótkich i długich wartości, od 1 dnia do lat, a odstęp czasu trwania staje się wąski
+
+W końcu badamy zachowanie funkcji logarytmu wiarygodności, jako że liczba częstotliwości $\bar{k}$ wzrasta od $1$ do $12$. Prawdopodobieństwo wzrasta znacznie, gdy $\bar{k}$ wzrasta z niskich do umiarkowanych wartości i nadal rośnie z malejącą szybkością, gdy dodajemy składniki . Funkcja prawdopodobieństwa ostatecznie spłaszcza się, gdy $\bar{k} \geq 10$. Monotoniczna zależność między prawdopodobieństwem a $\bar{k}$ potwierdza jedną z głównych przesłanek MSM: fluktuacje zmienności występują z niejednorodnymi stopniami trwałości, a wyraźne uwzględnienie większej liczby częstotliwości skutkuje lepszym dopasowaniem.
+
+W panelu B ograniczamy dwa parametry MSM. Zgodnie z ideą, że długoterminowa średnia zmienności jest słabo zidentyfikowana, ustalamy bezwarunkową zmienność $\bar{\sigma}$ równą wzorcowemu odchyleniu standardowemu zwrotów. Ponieważ składnik o niskiej częstotliwości jest trudny do zidentyfikowania nawet w długiej próbce danych, ustawiamy $\gamma_1 = (4T)$, tak że oczekuje się, że przełącznik w tym komponencie wystąpi raz w próbce zawierającej czterokrotnie więcej obserwacji niż dostępna próbka. Przy tych ograniczeniach musimy jedynie oszacować pozostałe parametry $m_0$ i $b$. Empirycznie, ograniczenia te zmniejszają prawdopodobieństwo, gdy $\bar{k}$ jest małe, ale dla dużych wartości $\bar{k}$ ograniczone prawdopodobieństwo jest bardzo zbliżone do nieograniczonego prawdopodobieństwa pokazanego w panelu A. Wyniki te sugerują, że ograniczenie wartości $\bar{\sigma}$ i $\gamma_1$ może być pragmatycznym podejściem empirycznym, które dodatkowo upraszcza ocenę MSM.
+
+Naturalne jest porównanie wyników największej wiarygodności MSM z oszacowaniami ze standardowego procesu zmienności. Uogólniona autoregresyjna warunkowa heteroskedastyczność ("GARCH", [E82], [Bo87]) zakłada, że zwroty mają postać $r_t = h^{1/2}_t e_t$, gdzie $h_t$ jest wariancyjną wariancją $r_t$ w dniu $t-1$. Innowacje $\{e_t\}_{t\geq 1}$ są niezależne i identycznie dystrybuowane jako wyśrodkowane zmienne Studenta z jednostkową wariancją i $\nu$ stopni swobody. W GARCH(1,1) wariancja warunkowa spełnia rekursję $h_{t+1} = \omega +\alpha r^{2}_t + \beta h_t$, a proces powrotu jest ogólnie zdefiniowany przez cztery parametry: $\nu$, $\omega$, $\alpha $, $\beta $. Szacujemy GARCH(1,1) na podstawie danych dotyczących kursu walutowego jena / dolara amerykańskiego i znajdujemy prawdopodobieństwo $-829.20$ prawie $100$ punktów niższe niż MSM.
+
+Model MSM generuje dokładne prognozy na podstawie przykładowych prognoz, jak teraz pokazujemy.
+Zarówno dla MSM, jak i GARCH szacujemy modele w próbie, wykorzystując zwroty od początku próbki do końca 1995 roku. Następnie używamy zwrotów od  początku 1996 r. Do końca próbki, aby ocenić wydajność "out-of-sample". Każdy model służy do prognozowania zrealizowanej zmienności prognozowania horyzontów w zakresie od 1 do 100 dni.
+Niech okres "out-of-sample" (próbny?) zaczyna się w dniu $T_0$ i przyjmij horyzont prognozy $n$. Obserwowane $N=T-(n-1)-T_0$ obserwacje zmienności w okresie poza próbą mają średnią wartość $\bar{RV_n} =N^{-1} \sum_{t=T_0}^{T-(n-1)}$.
+Prognoza "out-of-sample" $R^2$ jest określone przez $R^2 = 1-MSE/TSS$, gdzie całkowita suma kwadratów ($TSS$) jest wariancją poza próbą zmienności realizowanej: $TSS = N-1$, błąd średniokwadratowy ($MSE$) określa błędy prognozy: $MSE = N-1$, a oczekiwanie warunkowe jest przyjmowane przy założeniu, że model posiada.
+
+\begin{center}
+[TABELA 2]
+\end{center}
+
+Tabela 2 przedstawia wyniki prognozowania sumarycznego dla horyzontów 1, 5, 10, 20, 50 i 100 dni. Oprócz serii jenów / dolara, rozważamy trzy dodatkowe waluty: euro, funta brytyjskiego i dolara kanadyjskiego, wszystkie w stosunku do dolara amerykańskiego. MSM pokazuje solidną dobrą wydajność na wszystkich horyzontach i we wszystkich walutach, ze szczególną siłą występującą na dłuższych horyzontach 50 i 100 dni. [CF04], [cft], [L08], [BKM], [CDS], [BSZ] i [I] potwierdzają doskonałe (in- and out-of-sample) wyniki w próbkach i poza nimi w zakresie multifraktalności stosowanej w wielu seriach finansowych. [C09] uzyskuje podobne wyniki w przypadku wersji multifraktalnej o zredukowanej formie.
+
+
+\subsection{Long Memory in Volatility and Moment-Scaling\\
+(Długa pamięć w zmienności i skalowaniu momentu.)}
+
+MSM generuje hiperboliczny spadek w autokorelacji $p_q(n)$ zdefiniowanej w (\ref{eq:6}) dla zakresu opóźnień $n$. Rozważ dwie dowolne liczby $\alpha_1$ i $\alpha_2$ w interwale otwartym $(0,1)$. Zbiór liczb całkowitych $I_{\bar{k}} = \{n: \alpha_1 \log _b(b^{\bar{k}}) \leq \log _b n \leq \alpha_2 \log _b(b^{\bar{k}}) \}$ zawiera duży zakres opóźnień pośrednich. Pokazujemy w [CF04]:
+
+\begin{tw}[\textsc{Hyperbolic autocorrelation in volatility (autokorelacja hiperboliczna w zmienności)}] Rozważmy ustalony wektor $\psi$ i pozwól $q> 0$. Autokorelacja w poziomach spełnia
+$$ \lim_{\bar{k} \to + \infty} \Bigg(\sup_{n \in I_{\bar{k}}} \bigg|\frac{\log p_q(n)}{\log n^{-\delta(q)}}-1 \bigg| \Bigg) = 0, $$
+gdzie $\delta(q) = \log_b \mathbb{E}(M^q) - 2 \log_b \mathbb{E}(M^{q/2})$
+\end{tw}
+
+MSM naśladuje hiperboliczny protokół autokorelogramów $p_q(n) \sim -\delta(q) \log n$ wykazywany przez wiele serii finansowych (np. [D], [DGE], [BBM]).
+
+MSM pokazuje, że model Markov-chain regime-switching może teoretycznie wykazywać jedną z cech określających długą pamięć, hiperboliczny spadek autokorelogramu w długich czasach opóźnienia. Ułamkowe ruchy Browna ([K], [M65]) i ich równoważniki w czasie dyskretnym ([MV68], [GJ], [B]) generują hiperboliczne autokorelogramy, przyjmując, że innowacja liniowo wpływa na przyszłe okresy przy hiperbolicznie spadającej masie; w rezultacie integracja frakcyjna ma tendencję do tworzenia gładkich procesów. Natomiast MSM generuje długie cykle z mechanizmem przełączającym, który również powoduje gwałtowne zmiany lotności. Połączenie zachowania o długiej pamięci z nagłymi ruchami zmienności ma naturalny wpływ na modelowanie finansowe.
+
+\begin{center}
+[FIGURE 5]
+\end{center}
+
+MSM przechwytuje skale czasowe serii finansowych. Intuicyjnie MSM jest randomizowaną wersją MMAR, a zatem dziedziczy właściwości skracania momentu jej prekursora. Rysunek 5 pokazuje skalowanie momentu w dwumianowym MSM. Symulujemy 500 losowych ścieżek o długości $T = 20 000$, a dla każdej próbki obliczamy empiryczną estymację $\mathbb{E}(|p(t+\Delta T)-p(t)|^q)$, jak wyjaśniono w podpisie, na różne chwile $q$. Pobieramy średnie w losowych próbkach logarytmu przykładowych momentów i narysujemy je względem logarytmu długości przedziału $\Delta t$. Wykresy są w przybliżeniu liniowe, zgodne z relacją skalowania (\ref{eq:8}). Odsyłamy czytelnika do [CF] pod kątem teoretycznych wyników skalowania asymptotycznego MSM i testów statystycznych zdolności MSM do replikacji skalowania w danych empirycznych.
+
+\subsection{MSM w czasie ciągłym}
+
+
+Konstrukcja MSM działa równie dobrze w czasie ciągłym. Zakładamy teraz, że czas jest zdefiniowany w przedziale $[0, +\infty]$. Biorąc pod uwagę wektor stanu Markowa
+$$M_t = (M_{1,t}; M_{2,t}; \ldots; M_{\bar{k},t}) \in \mathbb{R}^{\bar{k}}_{+}$$
+
+dynamika w nieskończenie małych odstępach jest zdefiniowana następująco. Dla każdego $k \in \{1, \ldots, \bar{k}\}$, zmiana $M_{k,t}$ może zostać wywołana przez przybycie Poissona z intensywnością $\lambda_k$ . Składnik $M_{k,t+dt}$ jest czerpany ze stałej dystrybucji M, jeżeli jest nadejście, a poza tym pozostaje przy swojej aktualnej wartości: Mk + dt = Mk, t. Budowę można podsumować w następujący sposób:
+
+\begin{tabular}{l l}
+$M_{k, t +dt}$ jest brany z rozkładu M & z prawdopodobieństwem $\lambda_k dt$\\
+$M_{k, t +dt} = M_{k, t}$ & z prawdopodobieństwem $1 - \lambda_k dt$\\
+\end{tabular}
+
+Momenty przejścia Poissona i nowe losowania z $M$ są niezależne na całej długości $k$ i $t$. Ścieżki próbek komponentu $M_{k,t}$ są cadlag, to znaczy są prawostronnie ciągłe i mają punkt graniczny po lewej stronie dowolnej chwili.
+
+Prawdopodobieństwo przejścia jest określone przez:
+\begin{equation}
+\label{3.7}
+\lambda_k = \lambda_1 b^{k-1}, \qquad k\in \{1, \ldots, \bar{k} \}
+\end{equation}
+Parametr $\lambda_1$ określa trwałość składowej najniższej częstotliwości, a $b$ odstępy między częstotliwościami składowymi.
+Na koniec zakładamy, że logartmiczny proces ceny $p(t)$ spełnia stochastyczną dyfuzję równania różniczkowego
+\begin{equation}
+\label{3.8}
+dp(tP = \mu dt + \sigma(M_t) dZ_t
+\end{equation}
+gdzie $Z_t$ jest standardowym ruchem Browna, a $\sigma (M_t)$ odpowiada równaniu (\ref{3.3}). Cena
+\begin{equation}
+\label{3.9}
+p(t) = p(0) + \mu t + \int_{0}^{t} \sigma(M_s)dZ_s
+\end{equation}
+jest ciągłą dyfuzją Ito ze stałym dryftem $\mu$ i zmienną w czasie zmiennością wieloczęstotliwościową $\sigma (M_t)$. [CF01] i [CF08] badają ścisłe powiązanie między konstruktami dyskretnymi i ciągłymi MSM i pokazują, że prawdopodobieństwa przejścia (\ref{3.1}) są dyskretnymi wersjami intensywności geometrycznych (\ref{3.7}). Przełączniki wieloczęstotliwościowe w dryfcie $\mu$ mogą być również przydatne do wyceny aktywów, pozwalając na budowę wieloczęstotliwościowych długoterminowych modeli ryzyka ([BY04]), jak w [CF07].
+
+\subsection{Limiting Process with Countably Many Frequencies.\\(Ograniczanie procesu z wieloma częstotliwościami)}
+
+Konstrukcja MSM może pomieścić nieskończoność częstotliwości, jak teraz pokazujemy. Dla podanych parametrów $(\mu, \bar{\sigma}, m_0, \lambda_1, b)$, Niech $Mt = (M_{k, t})^{\infty}_{k=1} \in 'mathbb{R}^{\infty}_{+}$ oznacza proces stanowy MSM Markowa z wieloma składnikami. Każdy składnik $M_{k, t}$ charakteryzuje się intensywnością wchodzenia $\lambda_k \lambda_1 b^{k-1}$. Dla dowolnego skończonego $\bar{k}$ zmienność stochastyczna jest definiowana jako iloczyn pierwszych $\bar{k}$ składników wektora stanu:
+$$\sigma_{\bar{k}}(M_t) = \bar(\sigma)\bigg(\prod_{k=1}^{\bar{k}} M_{k,t} \bigg)^{1/2} $$
+
+Ponieważ chwilowa zmienność $\sigma_{\bar{k}}(M_t)$ zależy od rosnącej liczby składników, reprezentacja różnicowa (\ref{3.8}) staje się nieporęczna gdy $\bar{k} \to \infty$. W rzeczywistości chwilowa zmienność $\sigma_{\bar{k}}(M_t)$ zbiegnie się prawie na pewno do zera gdy $\bar{k} \to \infty$. Ponieważ zmienność nie jest jednak ograniczona, nie ma zastosowania zdominowana przez Lebesgue konwergencja. Zamiast tego rozważamy czas deformacji
+\begin{equation}
+\label{3.10}
+\theta_{\bar{k}} \equiv \int_{0}^{t} \sigma_{\bar{k}}^{2}(M_s)ds.
+\end{equation}
+W dowolnej chwili $t$, sekwencja $\{\theta_{\bar{k}}(t)\}_{k=1}^{\infty}$ jest dodatnim martyngałem o ograniczonym oczekiwaniu. Według twierdzenia o zbieżności martyngału, zmienna losowa $\theta_{\bar{k}}(t)$zbiegnie się do rozkładu granicznego, gdy $\bar{k} \to \infty$. Podobny argument odnosi się do dowolnej sekwencji wektorowej $\{ \theta_{\bar{k}} (t_1) ; \ldots ;\theta_{\bar{k}} (t_d) \}$, gwarantującej, że proces stochastyczny $\theta_{\bar{k}}(t_1)$ ma co najwyżej jeden punkt graniczny. Jak pokazano w [CF01], sekwencja $\{ \theta_{\bar{k}} \}_{\bar{k}}$ jest zwarta w następującym wystarczającym warunku.
+\begin{war}{\textsc{Tightness (szczelność?)}}
+$\mathbb{E}(M^2)<b$
+\end{war}
+Intuicyjnie, szczelność zapobiega zbyt gwałtownemu oscylowaniu czasu deformacji $\theta_{\bar{k}}$ dla $\bar{k} \to \infty$ . Odpowiednio, warunek 1 narzuca, że wstrząsy zmienności są wystarczająco małe lub ich czasy trwania $\lambda^{-1}_{k}$ zmniejszają się wystarczająco szybko, aby zapewnić zbieżność. Niech $D[0, \infty)$ oznacza przestrzeń funkcji cadlag zdefiniowanych w $[0, \infty)$, a niech $d_{\infty}^{\circ}$ oznacza odległość Skohorod.
+\begin{tw}{\textsc{Time deformation with countably many frequencies (Odkształcenie czasowe z niezliczoną liczbą częstotliwości)}}
+Z Warunku 1 sekwencja $(\theta_{\bar{k}})_{\bar{k}}$ słabo zbiega przy $\bar{k} \to \infty$ do miary $\theta_{\infty}$ zdefiniowanej w przestrzeni metrycznej $(D[0, \infty), d_{\infty}^{\circ})$ . Co więcej, ścieżki próbek $\theta_{\infty}$ są niemal na pewno ciągłe.
+\end{tw}
+Ograniczająca czas deformacja $\theta_{\infty}$ jest napędzana przez wektor stanu $Mt = (M_{k, t})^{\infty}_{k = 1}$ i dlatego ma strukturę Markowa analogiczną do MSM o skończonym $\bar{k}$.
+Ograniczający proces cenowy
+\begin{equation}
+\label{3.11}
+p_{\infty}(t) \stackrel{d}{=} p(0)+ \mu t + B[\theta_{\infty}(t)]
+\end{equation}
+ma ścieżki przykładowe, które są ciągłe, ale w niektórych momentach mogą być bardziej nieregularne niż ruchy Browna. W szczególności lokalna zmienność ścieżki próbki w danej dacie charakteryzuje się lokalnym wykładnikiem Holdera
+
+Heurystycznie możemy wyrazić nieskończenie małe wariacje procesu cenowego jako będące rzędu $(dt)^{\alpha(t)}$ wokół chwili $t$. Niższe wartości $\alpha(t)$ odpowiadają bardziej nagłym zmianom. Tradycyjne skoki dyfuzji narzucają, że $\alpha(t)$ jest równe $0$ w punktach nieciągłości, a $1/2$ poza tym. W przypadku dyfuzji multifraktalnej, takiej jak $p_{\infty}$, wykładnik $\alpha(t)$ przyjmuje ciągłość wartości w dowolny przedział czasu.
+
+\subsection{\textsc{Extensions (rozszeżenia)}}
+
+MSM został rozszerzony o kilka kierunków. [CFT] uwzględnia wielowariantową wersję MSM, która wychwytuje zarówno korelację w poziomach, jak i korelację zmienności zwrotów z kilku aktywów finansowych. Funkcja wiarygodności i filtr Bayesa wielowymiarowego MSM są dostępne analitycznie, tak jak w przypadku jednowymiarowym. Wielowymiarowy MSM dobrze ujmuje wspólną dynamikę zwrotów aktywów i zapewnia dokładne prognozy wartości zagrożonej portfelem aktywów.
+
+[Ja] rozwija rozszerzenie dwuwymiarowego MSM, które zawiera dynamiczne korelacje w innowacjach Gaussa. Nowy model, w którym autor monety MSMDCC, łączy strukturę wieloczęstotliwościową dwuwymiarowego MSM z elastyczną korelacją modelu dynamicznej korelacji warunkowej Engle [E02]. Prawdopodobieństwo i filtr Bayesian MSMDCC są dostępne analitycznie. MSMDCC przewyższa dwa bloki strukturalne - MSM i DCC - zarówno w próbce, jak i poza nią.
+
+[CDS] i [BSZ] wprowadzają multifraktalne modele przełączania Markowa czasu trwania między transakcjami, to jest przedział czasowy między dwiema kolejnymi transakcjami na danym zabezpieczeniu. Okresy międzybranżowe odgrywają ważną rolę w literaturze dotyczącej ekonometrii finansowej i mikrostruktury (np. [ER]) i mogą pomóc w opracowaniu algorytmicznych strategii handlowych. Modele czasowe MSM uwzględniają kluczowe cechy okresów międzybranżowych rynku finansowego: dynamikę długiej pamięci i wysoce rozproszone dystrybucje. Są także lepsze od swoich konkurentów o krótkiej pamięci w próbce i poza nią.
+
+\section{Pricing Multifractal Risk \\(Wycena ryzyka multifraktalnego)}
+
+Integracja ryzyka wieloczynnikowego z wyceną aktywów znajduje się obecnie w czołówce obecnych badań. Zaczynamy od przykładowego przykładu z [CF08].
+
+\subsection{An Equilibrium Model of Stock Prices \\(Równowagowy model cen akcji)}
+
+Uważamy, że aktywa nieskończone, takie jak akcje korporacji, opłacają losowy przepływ pieniężny $D_t$ w każdym okresie. Ponieważ na rentowność spółki mają wpływ liczne wstrząsy, z których każdy ma własny stopień trwałości, proces przepływu środków pieniężnych ma charakter wieloczynnikowy, a zatem jest źródłem ryzyka wieloprędkości. Z teorii finansowej wiemy, że w przypadku braku arbitrażu cena akcji na dany dzień $t$ jest bieżącą wartością oczekiwanych przyszłych dywidend, w przypadku, gdy stopa dyskontowa uwzględnia awersję do ryzyka inwestorów ([M], [DD]) . W poniższym przykładzie zakładamy, że stopy dyskontowe są uzyskiwane z klasycznego modelu wyceny Lucas ([Lu]), jak teraz wyjaśnimy.
+
+Model jest formalnie zdefiniowany następująco w ciągłym przedziale czasowym $[0, \infty]$. Niech $Z(t)\in \mathbb{R}$ oznacza standardowy ruch Browna, niech $\bar{k}\in \mathbb{N}*{ast}$ i niech $M_t \in \mathbb{R}^{\bar{k}}_{+}$ oznaczają wektor stanu MSM z komponentami $\bar{k}$. Procesy $Z$ i $M$ są wzajemnie niezależne. Akcje zasilają stały strumień przepływów pieniężnych $D_t$, który obejmuje dywidendy i wpływy z odkupień akcji. Dla uproszczenia po prostu odniesiemy się do $D_t$ jako procesu dywidendowego.
+\begin{war}{Dividends} Proces dywidendy spełnia
+$$\log(D_t) \equiv \log(D_0)+ \int_{0}^{t} \bigg[\bar{g}_D - \frac{\sigma^{2}_{D} (M_s)}{2} \bigg]ds  + \int_{0}^{t} \sigma_D (M_s)xZ_D(s)$$
+\end{war}
+w każdej chwili $t \in [0, \infty]$, gdzie $\bar{g}_D$ i $\bar{\sigma}_D$ są ściśle dodatnimi elementami linii rzeczywistej oraz $\sigma_D(M_t) = \bar{\sigma}_D(\prod_{k=1}^{\bar{k}} M_{k,t})^{1/2}$.
+
+Akcje są wyceniane przez zbiór identycznych czynników ryzyka, które obserwują realizację procesów $Z$ i $M$. Awersja do ryzyka została zdefiniowana następująco. Agent ocenia przydatność losowego strumienia zużycia ${C_t}_{t \leq 0}$ zgodnie z indeksem użyteczności
+$$U(\{ C_t\}) = \mathbb{E} \bigg[ \int_{0}^{+\infty} e^{-\delta t} u(C_t)dt \bigg| I_0 \bigg],$$
+gdzie $\delta$ jest ściśle dodatnią stałą, $I_0$ oznacza informację agenta ustawioną na $t = 0$, a $u$ jest narzędziem Bernoulliego:
+
+$$u(C) \equiv \Bigg\{ {\begin{array}{l l} 
+C^{1-\alpha}/(1-\alpha) & \text{dla} \ \alpha \neq 1,\\
+\log{C} & \text{dla} \ \alpha = 1.
+\end{array}}$$
+
+Agent ściśle preferuje strumień zużycia $\{C_t\}$ do strumienia zużycia $\{C_{t}^{\prime}\}$ wtedy i tylko wtedy, gdy $U (\{C_t\})> U (\{C_{t}^{\prime}\})$. Pozwalamy $\rho  = \delta- (1-\alpha) \bar{g}_D$, który uważamy za absolutnie pozytywny. Używamy małych liter dla logarytmów wszystkich zmiennych.
+
+\begin{tw}{\textsc{Equilibrium stock price (Cena akcji w równowadze)}} Cena akcji jest w logach sumą ciągłego procesu dywidendy i ceny: stopa dywidendy:
+$$p_t = d_t + q(M_t),$$
+gdzie
+\begin{equation}
+\label{4.1}
+q(M_t) = \log \mathbb{E} \Big( \int_{0}^{+\infty} e^{- \rho s - \frac{\alpha(1 - \alpha)}{2} \int_{0}^{s} \sigma_{D}^{2}(M_{t+h}) {dh}} ds \Big| M_t \Big)
+\end{equation}
+Proces cenowy następuje zatem po dyfuzji skokowej. Skok cenowy pojawia się, gdy dochodzi do nieciągłej zmiany stanu Markowa $M_t$, który napędza proces ciągłej dywidendy.
+\end{tw}
+
+Skoki cen są endogenicznymi implikacjami wyceny rynkowej, a różnice w cenie $p(t)$ kontrastują z ciągłym zachowaniem procesu dywidendy $d(t)$. W nieskończenie małych odstępach czasowych cena akcji zmienia się o
+$$d(p_t) = d(d_t) + \Delta (q_t),$$
+gdzie $\Delta(q-t) \equiv q(M_t) - q (M_{t^-})$ oznacza skończoną zmienność ceny: współczynnik dywidendy wywołany przez przełącznik Markov. Jeżeli $\alpha <1$, przełącznik, który zwiększa zmienność obecnych i przyszłych dywidend, powoduje ujemną realizację $\Delta(q_t)$. Ceny rynkowe generują więc endogenną ujemną korelację między zmianami zmienności a skokami cen.
+
+Wielkość skoku $\Delta (q_t) = q (M_t) - q (M_{t^-})$ zależy od trwałości komponentu, który się zmienia. Mnożniki niskiej częstotliwości dostarczają trwałe i dyskretne przełączniki, które przez (\ref{4.1}) mają duży wpływ na cenę. Natomiast komponenty o wyższej częstotliwości nie mają zauważalnego wpływu na ceny, ale dają dodatkowe wartości odstające w wyniku zwrotów poprzez ich bezpośredni wpływ na ogony procesu dywidendowego. Proces cenowy charakteryzuje się zatem dużą liczbą małych skoków (wysoka częstotliwość $M_{k, t}$), umiarkowana liczba skoków średnich (częstotliwość pośrednia $M_{k, t}$) i niewielka liczba bardzo dużych skoków. Wcześniejsze badania empiryczne sugerują, że jest to dobra charakterystyka dynamiki zwrotów akcji. Model multifraktalny pozwala uniknąć trudnego wyboru unikalnej częstotliwości i rozmiarów rzadkich zdarzeń, co jest częstym problemem w przypadku tradycyjnych metod dyfuzji skoku.
+
+\begin{center}
+[FIGURE 6]
+\end{center}
+
+Rysunek 6 ilustruje dynamikę modelu wyceny. Dwa górne panele przedstawiają symulowany proces dywidend, odpowiednio w stopach wzrostu i logarytmach poziomu. W środkowych dwóch panelach wyświetlane są odpowiadające im stopy zwrotu i ceny kłód. Seria cenowa wykazuje znacznie większe ruchy niż dywidendy, ze względu na obecność endogennych skoków w stosunku ceny do dywidendy, $e^{q(M_t)}$. Aby to wyraźnie zobaczyć, dwa dolne panele pokazują kolejno: 1) efekty "sprzężenia zwrotnego", zdefiniowane jako różnica między dochodami z dzienników a wzrostem dziennej dywidendy, oraz 2) stopa ceny: dywidenda. Zgodnie z twierdzeniem 3 obserwujemy kilka nielicznych, ale dużych skoków cen, z mniejszymi, ale liczniejszymi małymi nieciągłościami. Symulacja pokazuje, że różnica między zyskami ze sprzedaży akcji a wzrostem dywidendy może być duża, nawet jeśli stosunek dywidendy do ceny zmienia się w wiarygodnym i względnie niewielkim zakresie. Ogólnie rzecz biorąc, model wyceny równowagi przechwytuje endogeniczne skoki cenowe wieloczęstotliwościowe, zmienność stochastyczną wieloczęstotliwościową oraz endogeniczną korelację między zmiennością a zwrotami.
+
+\subsection{Convergence to a Multifractal Jump-Diffusion}
+
+Badamy teraz, w jaki sposób dyfuzja cen zmienia się jako $\bar{k} \to \infty$, tj. Jako komponenty o coraz wyższej częstotliwości są dodawane do wektora stanu. Zgodnie z Warunkiem 2 i twierdzeniem 2, proces dywidendy $d_{\bar{k}}(t)$ zbiega się w rozkładzie do
+$$d_{\infty}(t) = d_0 + \bar{g}_D t - \theta_{\infty}(t) / 2 + B [\theta_{\infty}(t)]$$
+jako $\bar{k} \to \infty $. Według (\ref{4.1}) proces $q_{\bar{k}} (t)$ jest pozytywnym submartyngałem, który również zbiega do granicy przy $\bar{k} \to \infty$.
+\begin{tw}{\textsc{(Jump-diffusion with countably many frequencies)}}
+Zakładamy, że $\alpha<1$ i że utrzymane są warunki 1 i 2. Gdy liczba częstotliwości zbliża się do nieskończoności, proces ceny logarytmicznej słabo zbiegnie się
+$$p_{\infty}(t) \equiv d_{\infty}(t) + q_{\infty}(t)$$
+gdzie
+$$q_{\infty}(t) = \log \mathbb{E} \Bigg[ \int_{0}^{+\infty} e^{- \rho s - \frac{\alpha(1 - \alpha)}{2} [\theta_{\alpha} (t+s) -\theta_{\alpha}(t)]}ds \Bigg| (M_{k,t})_{k=1}^{\infty} \Bigg]$$
+to czysty proces skoku. Cena graniczna jest zatem dyfuzją skoku z wieloma różnymi częstotliwościami.
+\end{tw}
+
+Ograniczający logarytmiczny proces ceny $p_{\infty} (t)$ jest sumą: (i) ciągłej dyfuzji multifraktalnej $d_{\infty} (t)$ i (ii) czystego procesu skoku $q_{\infty} (t)$. Odpowiednio nazywamy $p_{\infty} (t)$ multifraktalną dyfuzją skoku.
+
+Gdy $\bar{k}= \infty$, przestrzeń stanów jest kontinuum (continuum), a dyfuzja skoku multifraktalnego jest ściśle określona przez siedem parametrów $(\bar{g}_D, \bar{\sigma}_D, m_0, \gamma_1, b, \alpha, \rho)$. Proces ograniczający $q_{\infty} (t)$ wykazuje bogate właściwości dynamiczne. W dowolnym ograniczonym przedziale czasowym istnieje prawie na pewno mnożnik $M_{k, t}$, który przełącza i powoduje skok ceny akcji. Stąd skok cenowy pojawia się prawie na pewno w sąsiedztwie każdej chwili. Co więcej, liczba przełączników jest policzalna niemal w dowolnym ograniczonym przedziale czasowym, co oznacza, że proces $q_{\infty} (t)$ ma nieskończoną aktywność i jest ciągły prawie wszędzie.
+
+
+Wyniki konwergencji stanowią użyteczne wskazówki dotyczące wyboru liczby częstotliwości w zastosowaniach teoretycznych i empirycznych. Z jednej strony konwergencja procesu cenowego oznacza, że gdy $\bar{k}$ jest duże, krańcowy wkład dodatkowych komponentów prawdopodobnie będzie niewielki w zastosowaniach związanych z dopasowaniem serii cenowej lub zwrotu. Następnie wygodnie jest wziąć pod uwagę pewną liczbę częstotliwości $\bar{k}$, która jest wystarczająco duża, aby uchwycić heteroskedastyczność finansowych szeregów, ale wystarczająco mała, aby mogła pozostać podatna. Z drugiej strony, wiele częstotliwości może okazać się użytecznych w bardziej teoretycznych kontekstach, w których lokalne zachowanie procesu cenowego musi być dokładnie zrozumiane. Przykłady mogą obejmować budowę modeli uczenia się lub projektowanie dynamicznych strategii hedgingowych.
+
+\subsection{Other Work}
+
+Kilka innych artykułów przedstawia cenowe zastosowania multifraktalnego ryzyka. [CF07] opracowuje dyskretny model czasowych stóp zwrotu, w którym zmienność dywidend informacyjnych następuje po MSM. Wynikowa wariancja zwrotów zapasów jest znacznie wyższa niż wariancja dywidend, jak ma to miejsce w przypadku danych. Specyfikacja dywidendy MSM poprawia się na klasycznym modelu [CH], który generuje skromniejsze efekty wzmocnienia dzięki procesowi dywidendy GARCH. [CF07] również bada dynamikę zwrotów, gdy agent nie jest w pełni poinformowany o stanie Mt, ale musi kolejno uczyć się o nim z dywidend i innych sygnałów; domniemany proces powrotny wykazuje znaczną ujemną skośność, która jest ponownie zgodna z danymi. [Ki] opiera się na [CF07], aby wyjaśnić szereg ustaleń empirycznych.
+
+Zmienność multifraktalna ma bezpośrednie konsekwencje dla wyceny opcji. [CFFL] wprowadza rozszerzenie MSM, które może uwzględniać zmiany w skosie i strukturze termicznej danych opcji. Przeskoki do procesu powrotu są wyzwalane przez zmiany w elementach zmienności o niskiej częstotliwości, a "efekt dźwigni" jest generowany przez ujemną korelację innowacji o wysokiej częstotliwości z zyskami i zmiennością. Wykorzystując zwroty indeksu S\and P 500 oraz panel opcji o wielu terminach zapadalności i strajkach, ukryte komponenty zmienności umożliwiają dynamiczne dopasowanie modelu do szerokiego zakresu powierzchni opcjonalnych zarówno w próbce, jak i poza nią.
+
+Oszczędne modele z wieloma komponentami mają naturalne zastosowanie w modelowaniu stóp procentowych. [CFW] rozwija klasę modeli dynamicznej struktury terminowej, która uwzględnia dowolnie wiele czynników stopy procentowej o stałej liczbie parametrów. Podejście to opiera się na krótkookresowej kaskadzie, oszczędnej konstrukcji rekursywnej, która szereguje zmienne stanu według ich współczynników średniej rewersji, z których każda obraca się wokół poprzedniego współczynnika niskiej częstotliwości. Kaskada obejmuje szeroki zakres specyfikacji zmienności i premii za ryzyko, a krzywe forwardów wynikające z braku arbitrażu są płynne, dynamicznie spójne i dostępne w formie zamkniętej. [CFW] zapewnia warunki, w których, gdy liczba czynników przechodzi w nieskończoność, konstrukcja zbiega się w dobrze zdefiniowaną, nieskończoną wymiarową strukturę dynamiczną. Kaskada pokonuje przekleństwo wymiarowe związane z ogólnymi modelami afinicznymi. Wykorzystując panel 15 LIBOR i współczynników swapowych, [CFW] szacuje dane techniczne z wieloma czynnikami w zakresie od jednego do 15, a wszystkie są określone tylko przez pięć parametrów. W próbce domniemana krzywa rentowności pasuje do danych niemal idealnie. Na podstawie próby prognozy stóp procentowych znacznie wyprzedzają wcześniejsze poziomy odniesienia.
+
+Ogólnie rzecz biorąc, wyniki przedstawione w tej sekcji pokazują, że ryzyko wmultifraktalne ma duże konsekwencje cenowe, które już pozwoliły badaczom przezwyciężyć kluczowe niedociągnięcia standardowych modeli finansowych opartych na mniejszych przestrzeniach państwowych. Te wczesne sukcesy sugerują, że multifraktale są obiecującymi potężnymi narzędziami do wyceny aktywów.
+
+\section{Conclusion}
+
+Pięćdziesiąt lat temu Benoït Mandelbrot odkrył, że zwroty finansowe wykazują silne odstępstwa od Gaussianity i opowiadały się za użyciem samopodobnych, stabilnych dla siebie procesów do modelowania fluktuacji rynkowych. Te dwa spostrzeżenia zainicjowały wprowadzenie metod fraktalnych w finansach. Od tego czasu, grube ogony, integracja frakcyjna i wieloprotokołowe skalowanie stały się znanymi narzędziami dla praktyków finansowych, ekonometrycznych, statystycznych i ekonofizycznych. Metody fraktalne są teraz często łączone z bardziej tradycyjnymi metodami i dały początek popularnym modelom hybrydowym, takim jak frakcyjnie zintegrowany GARCH ([BBM]) lub zmienność stochastyczna o długiej pamięci ([HMS]). Postępy te świadczą o udanej integracji metod fraktalnych z głównym nurtem finansów.
+
+W ciągu ostatnich piętnastu lat badania fraktalne w finansach skupiały się na opracowaniu multifraktycznych modeli powrotów, które mogą wspólnie wychwytywać grube ogony, długotrwałą stabilność lotności, wieloprędkość skalowania momentu i nieliniowe zmiany w rozkładzie zysków obserwowanych na różnych horyzontach. Modele multifraktyczne ujmują te empiryczne prawidłowości za pomocą wyjątkowo małej liczby parametrów i są silnymi wykonawcami zarówno w próbkach, jak i poza nimi, jak ilustruje to sekcja empiryczna tego artykułu.
+
+Te zmiany w badaniach finansowych doprowadziły do ​​postępów w samej metodzie multifraktycznej. 
+Multifraktalne pomiary mogą teraz być budowane dynamicznie w czasie ([CF01], [BDM]), a obecnie dostępnych jest kilka klas dyfuzorów multifraktycznych ([CFM], [CF01], [BDM]). 
+Te innowacje dostarczają nowych intuicji dotyczących pojawiania się wieloczynnikowych zachowań w zjawiskach ekonomicznych i naturalnych. Na przykład MSM pokazuje, że multifraktalność może być generowana przez proces Markowa z wieloma komponentami, z których każdy ma swój własny stopień wytrwałości. MSM pozwala na zastosowanie wydajnych metod statystycznych, takich jak szacowanie wiarygodności i filtrowanie bayesowskie, do procesu wieloczynnikowego. Zmiany te są nowością w literaturze multifractal i obecnie rozprzestrzeniają się poza dziedziną finansów (np. [RR]). Co więcej, uwzględnienie ryzyka wieloczynnikowego w modelu wyceny generuje multifraktalne przeskoki-dyfuzje, całkowicie nowy obiekt matematyczny, który zasługuje na dalsze badania.
+
+Pomimo tych sukcesów, multifraktalne finanse pozostają młodym polem i wiele wyzwań pozostaje. Metodologia statystyczna może zostać ulepszona w celu uwzględnienia lepszych cech zwrotów finansowych, na przykład na wzór [CFFL]. Udoskonalenia wnioskowania statystycznego są niewątpliwie możliwe, na przykład poprzez zastosowanie różnych rozkładów M, poprzez badanie różnych specyfikacji prawdopodobieństwa przejścia lub przez uproszczenie metody szacowania. Wreszcie, integracja fraktalnego ryzyka z cenami aktywów oferuje znaczny potencjał dla ekonomii finansowej, co ilustrują niedawne prace nad opcjami i terminową strukturą stóp procentowych.
+
+\end{document}

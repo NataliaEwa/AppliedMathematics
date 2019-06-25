@@ -1,0 +1,2739 @@
+<zuiprezi>
+  <version>10</version>
+  <zui-table>
+    <settings>
+      
+      <autoplay>
+        
+        <delay>4000</delay>
+        
+      </autoplay>
+      
+      <bounds x="-225861.40568186433" y="-125991.10088663505" width="451722.81136372866" height="251982.20177327003"/>
+      <aspectratio>off</aspectratio>
+      <languages>
+        <language>en</language>
+      </languages>
+      <mode type="normal"/>
+    </settings>
+    <object id="122_20166879" type="button" x="18743.726851450865" y="-1506.5514001785864" r="-6.542254577733322e-47" s="438.20518106508723" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>946.1012154683192</w>
+        <h>562.7519969787691</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="13_162173415" type="shape" x="-70273.77363206966" y="-32562.809838109162" r="2.2762630445569957e-31" s="94.5346508114816" class="poly3">
+      <style gradEndAlpha="1" gradStartAlpha="1" borderThickness="9" gradEndColor="8028290" gradStartColor="8028290" borderColor="8028290" color="8028290"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" borderThickness="9" gradEndColor="8028290" gradStartColor="8028290" borderColor="8028290" color="8028290"/>
+      <geom type="poly">
+        <p x="-748.3893332444129" y="-249.71101293313927"/>
+        <p x="748.3893332444129" y="-249.71101293313927"/>
+        <p x="748.3893332444129" y="249.71101293313927"/>
+        <p x="-748.3893332444129" y="249.71101293313927"/>
+        <t>9</t>
+        <r>0</r>
+      </geom>
+    </object>
+    <object id="97_20166879" type="image" x="-64267.881843902265" y="32762.496201161983" r="2.6747701143501864e-31" s="119.01731077167156">
+      <source w="68" h="104" bt="-12.05" bl="-12">710594603<url>710594603.swf</url></source>
+      <sourceUrl>fa9.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594603</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/6/8/d3b4abd98e6d74556b5435943ff9bceb925b7.swf</url></resource></object>
+    <object id="27" type="button" x="117734.19620682525" y="63446.57434705569" r="2.1640735540917096e-31" s="198.87099647367762" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="23_20166879" type="button" x="56154.93446333341" y="110810.93040137998" r="18.46334734227818" s="44.475683334759005" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>796.3</w>
+        <h>453.8141654691028</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="59_20166879" type="image" x="72869.31778217369" y="78540.18021138228" r="2.5532576929641893e-31" s="118.57854697465734">
+      <source w="88" h="123" bt="-12" bl="-12">710600605<url>710600605.swf</url></source>
+      <sourceUrl>fa3b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600605</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/c/b/052e99fe523ea11e038b76df755c68e8c85d2.swf</url></resource></object>
+    <object id="86_20166879" type="image" x="100153.71591002062" y="75493.16887568783" r="2.5532576929641796e-31" s="143.83413455572327">
+      <source w="87" h="117" bt="-12.05" bl="-12">710583073<url>710583073.swf</url></source>
+      <sourceUrl>fa5.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583073</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/b/3/d15a701579f91b20738a4b465bf199a6d1598.swf</url></resource></object>
+    <object id="25_20166879" type="button" x="142005.27007758664" y="94090.32109193743" r="-6.46973474821447" s="42.49239939464337" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>815</w>
+        <h>464.4713611168139</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="38_20166879" type="image" x="143127.43678522023" y="56780.033985404996" r="2.6431819224325147e-31" s="158.5690095757993">
+      <source w="74" h="102" bt="-12.05" bl="-12">710594611<url>710594611.swf</url></source>
+      <sourceUrl>fa7.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594611</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/f/3/d249224ec04ebbfcea245f12cd31ec905ea18.swf</url></resource></object>
+    <object id="63_20166879" type="image" x="125931.90935254193" y="-94497.05131004364" r="-0.19709842678987524" s="246.06805155800126">
+      <source w="473" h="254" bt="-12" bl="-12">710567461<url>710567461.swf</url></source>
+      <sourceUrl>eg.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567461</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/8/c/43a16eb8c69329e2948524232827f4b3ae2a8.swf</url></resource></object>
+    <object id="0" type="shape" x="-26277.560312037218" y="55053.16529478986" r="-0.18230459975364938" s="573.05451378425" class="line3">
+      <geom type="line">
+        <sp>-91.36562616180406 28.983461577894666</sp>
+        <ep>91.36562616180406 28.983461577894666</ep>
+        <b>-57.96692315578933</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="1" type="shape" x="56507.550982480636" y="90818.9926388324" r="24.594145769782468" s="573.0545137842474" class="line3">
+      <geom type="line">
+        <sp>-65.80378941443958 -11.54383919470608</sp>
+        <ep>65.80378941443958 -11.54383919470608</ep>
+        <b>23.08767838941216</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="2" type="shape" x="113789.83992880427" y="85237.8200122316" r="-44.999999999999986" s="573.0545137842494" class="line3">
+      <geom type="line">
+        <sp>-43.80576590085464 -6.14594665250154</sp>
+        <ep>43.80576590085464 -6.14594665250154</ep>
+        <b>12.29189330500308</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="3" type="shape" x="130024.44602921791" y="43363.24087076676" r="-91.36508018097693" s="573.0545137842491" class="line3">
+      <geom type="line">
+        <sp>-37.713162486769306 -2.5893013321601743</sp>
+        <ep>37.713162486769306 -2.5893013321601743</ep>
+        <b>5.1786026643203495</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="21_20166879" type="button" x="-87890.4669190137" y="90967.58233383842" r="2.6935339574011755e-47" s="88.69543064827906" class="circle">
+      <type>circle</type>
+      <size>
+        <w>454.1</w>
+        <h>454.1</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="18" type="button" x="-64284.43378085928" y="-28061.88952148067" r="8.831663140030396e-16" s="261.6843014025509" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1235.9434053897858</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="22_20166879" type="button" x="-29060.98856347774" y="22090.05558239573" r="1.4053349304326882e-15" s="41.11311028022955" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>796</w>
+        <h>453.643194415931</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="4_178700802" type="button" x="-29057.02996787829" y="21415.394396069143" r="1.585610992248782e-15" s="36.43875468698349" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="95_20166879" type="image" x="86957.76895750925" y="80623.88510072762" r="2.5532576929641757e-31" s="180.03786733664847">
+      <source w="302" h="117" bt="-55.95" bl="-14.5">709438817<url>709438817.swf</url></source>
+      <sourceUrl>fal3.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709438817</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/9/1/86a53f8ccfc335408ff4698eee5cf2126888c.swf</url></resource></object>
+    <object id="5_162054195" type="button" x="24979.610825969852" y="40057.525027726064" r="7.892659918459696" s="31.456992964547613" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>998.581787109375</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="71_20166879" type="image" x="67894.29823971403" y="103302.77376737766" r="18.463347342278198" s="57.221747518047714">
+      <source w="141" h="89" bt="-12.05" bl="-12">709426659<url>709426659.swf</url></source>
+      <sourceUrl>autokek.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709426659</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/4/b/b3a78b8f8e47df2bb09c5a2df42902f8c3108.swf</url></resource></object>
+    <object id="69_20166879" type="image" x="-79333.14870773151" y="63198.15368809417" r="4.942868787432405e-31" s="87.06916623779323">
+      <source w="147" h="109" bt="-12.05" bl="-12">709426655<url>709426655.swf</url></source>
+      <sourceUrl>auto%20sz.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709426655</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/a/1/c8368c06aebb61c804e70e187aa35747db83a.swf</url></resource></object>
+    <object id="94_20166879" type="image" x="105284.48158898338" y="76731.27690112103" r="2.5532576929641875e-31" s="163.73118500111974">
+      <source w="206" h="135" bt="-12.05" bl="-98.15">709438815<url>709438815.swf</url></source>
+      <sourceUrl>fal2.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709438815</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/f/d/abb97c333aef5aac1d47b1669d015edab43c9.swf</url></resource></object>
+    <object id="117_20166879" type="persistentgroup" x="90984.5743275788" y="78434.73744130062" r="2.553257692964191e-31" s="84.27889306482692">
+      <m o="59_20166879"/>
+      <m o="86_20166879"/>
+      <m o="95_20166879"/>
+      <m o="94_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="4_20166879" type="image" x="-54429.157188952304" y="42933.36486552313" r="2.6747701143501785e-31" s="122.87485191049855">
+      <source w="414" h="209" bt="-12.05" bl="-25.5">709493795<url>709493795.swf</url></source>
+      <sourceUrl>hid.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709493795</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/e/8/345bf239201f35ea019e43119f035aaa3608c.swf</url></resource></object>
+    <object id="0_20166879" type="image" x="149130.40225380825" y="-77748.35475812835" r="-0.19709842678988293" s="122.26810717841612">
+      <source w="304" h="612" bt="-12.05" bl="-12">711675383<url>711675383.swf</url></source>
+      <sourceUrl>Felhok%20jav.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>711675383</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/1/4/7e9e6da43dcab3dce5282c53c24422bf935d5.swf</url></resource></object>
+    <object id="64_20166879" type="image" x="170215.86773321376" y="-55550.19405053489" r="-0.1970984267899076" s="141.40898859213434">
+      <source w="199" h="371" bt="-12.05" bl="-12">710567469<url>710567469.swf</url></source>
+      <sourceUrl>henger.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567469</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/5/8/6863323830aa0af6554f8e5048905db5c5e73.swf</url></resource></object>
+    <object id="65_20166879" type="image" x="96072.18511188272" y="-106673.71976748435" r="-0.19709842678986841" s="224.131609429767">
+      <source w="120" h="65" bt="-12.05" bl="-12">710567471<url>710567471.swf</url></source>
+      <sourceUrl>felho.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567471</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/e/1/707dd30f4e91c0c340fccb67f7f4d5b57e7f0.swf</url></resource></object>
+    <object id="76_20166879" type="image" x="100144.31636084073" y="-77579.1975431808" r="-0.197098426789869" s="114.57002502861792">
+      <source w="395" h="680" bt="-12.05" bl="-12">710567485<url>710567485.swf</url></source>
+      <sourceUrl>felhok2.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567485</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/9/7/f8f97f69abe88c2f06b68b70908751bd12953.swf</url></resource></object>
+    <object id="0_32911991" type="button" x="120979.1715207531" y="-49937.6678075283" r="9.6736301965881e-16" s="238.9079954531075" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>835.0130838475733</w>
+        <h>636.3925585023856</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="62_13415665" type="button" x="117715.67807292302" y="-1502.1449174332436" r="1.7360964220755867e-31" s="61.974015191797534" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="72_20166879" type="image" x="126068.16236454177" y="-55400.98446836492" r="-0.19709842678989484" s="130.24114277240847">
+      <source w="280" h="585" bt="-11.65" bl="-12">710567481<url>710567481.swf</url></source>
+      <sourceUrl>felhok3.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567481</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/d/b/7c011512a5f670bdbb112782b57e169315d97.swf</url></resource></object>
+    <object id="80_20166879" type="image" x="63529.9897673808" y="-41922.94403952133" r="-0.19709842678986442" s="137.13955525467364">
+      <source w="311" h="198" bt="-13.25" bl="-12">710567493<url>710567493.swf</url></source>
+      <sourceUrl>haz%20barokk.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567493</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/8/c/481c35388307aaa0c79fd15e927571f8c7c1c.swf</url></resource></object>
+    <object id="99_20166879" type="image" x="93174.01625231661" y="-31344.289405342264" r="-0.19709842678990863" s="105.40417410483794">
+      <source w="88" h="123" bt="-12.05" bl="-12">710583051<url>710583051.swf</url></source>
+      <sourceUrl>fa3.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583051</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/a/e/cd091a4e4c3ae5aaf34761189fe420cc556c8.swf</url></resource></object>
+    <object id="70_20166879" type="image" x="80558.15584580624" y="-41982.40806005997" r="-0.1970984267898676" s="165.02292121014986">
+      <source w="192" h="297" bt="-110.4" bl="-12">710567479<url>710567479.swf</url></source>
+      <sourceUrl>tarsash.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567479</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/3/f/a82fa2c5b8b85412f2bd4a2710cd8c389282e.swf</url></resource></object>
+    <object id="101_20166879" type="image" x="174498.5155835208" y="-24538.642927993365" r="-0.1970984267899111" s="120.04364273050912">
+      <source w="90" h="108" bt="-12" bl="-12">710583055<url>710583055.swf</url></source>
+      <sourceUrl>fa1.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583055</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/a/9/45569c3ac1c61611713058476df992ac715c9.swf</url></resource></object>
+    <object id="100_20166879" type="image" x="63565.24010990522" y="-31234.61160158758" r="-0.19709842678991374" s="92.60509582067901">
+      <source w="68" h="140" bt="-12" bl="-12">710583053<url>710583053.swf</url></source>
+      <sourceUrl>fa2.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583053</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/1/a/271a010b79d29ffc6dcb6d1acd90ec0fa4460.swf</url></resource></object>
+    <object id="98_20166879" type="image" x="170347.13365543197" y="-14299.005465454233" r="-0.19709842678987002" s="124.6607059124502">
+      <source w="68" h="104" bt="-12" bl="-12">710583049<url>710583049.swf</url></source>
+      <sourceUrl>fa4.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583049</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/9/1/9b45e584ad6b763d9c085fc3599eb72bf0cc7.swf</url></resource></object>
+    <object id="102_20166879" type="image" x="167138.62136349073" y="-29019.731548593438" r="-0.19709842678988831" s="110.80951636662417">
+      <source w="87" h="117" bt="-12.05" bl="-12">710583073<url>710583073.swf</url></source>
+      <sourceUrl>fa5.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583073</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/b/3/d15a701579f91b20738a4b465bf199a6d1598.swf</url></resource></object>
+    <object id="15_20166879" type="image" x="80424.46690960697" y="104775.23092331002" r="1.5445496047101444e-31" s="167.01175912857747">
+      <source w="68" h="104" bt="-12.05" bl="-12">710594603<url>710594603.swf</url></source>
+      <sourceUrl>fa9.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594603</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/6/8/d3b4abd98e6d74556b5435943ff9bceb925b7.swf</url></resource></object>
+    <object id="17_20166879" type="image" x="152828.86642158037" y="-42017.34672353785" r="-0.19709842678988262" s="137.59690156184564">
+      <source w="73" h="102" bt="-12" bl="-12">710594607<url>710594607.swf</url></source>
+      <sourceUrl>fa8.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594607</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/1/4/d4a1ba75addcda457d973f08642cd90b20267.swf</url></resource></object>
+    <object id="37_20166879" type="image" x="141636.62900904875" y="62096.18225643347" r="2.6431819224325086e-31" s="155.51960554549595">
+      <source w="68" h="104" bt="-12" bl="-12">710594609<url>710594609.swf</url></source>
+      <sourceUrl>fa6.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594609</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/0/1/18deb7075f0f48e5205ea90576d3456d8207a.swf</url></resource></object>
+    <object id="39_20166879" type="image" x="102723.15458227301" y="-41850.3012716768" r="-0.1970984267899111" s="120.04364273050912">
+      <source w="90" h="108" bt="-12" bl="-12">710583055<url>710583055.swf</url></source>
+      <sourceUrl>fa1.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583055</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/a/9/45569c3ac1c61611713058476df992ac715c9.swf</url></resource></object>
+    <object id="40_20166879" type="image" x="70731.09446990289" y="-21819.731562383735" r="-0.19709842678988831" s="110.80951636662417">
+      <source w="87" h="117" bt="-12.05" bl="-12">710583073<url>710583073.swf</url></source>
+      <sourceUrl>fa5.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583073</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/b/3/d15a701579f91b20738a4b465bf199a6d1598.swf</url></resource></object>
+    <object id="0_30863873" type="persistentgroup" x="113257.01233134081" y="-66871.65038585888" r="2.356829697151633e-31" s="365.2121870873239">
+      <m o="65_20166879"/>
+      <m o="72_20166879"/>
+      <m o="63_20166879"/>
+      <m o="0_20166879"/>
+      <m o="64_20166879"/>
+      <m o="76_20166879"/>
+      <m o="80_20166879"/>
+      <m o="99_20166879"/>
+      <m o="70_20166879"/>
+      <m o="101_20166879"/>
+      <m o="100_20166879"/>
+      <m o="98_20166879"/>
+      <m o="102_20166879"/>
+      <m o="17_20166879"/>
+      <m o="39_20166879"/>
+      <m o="40_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="56_20166879" type="image" x="86727.04887005463" y="107336.9746620384" r="1.544549604710144e-31" s="152.53826556100645">
+      <source w="90" h="108" bt="-12" bl="-12">710600601<url>710600601.swf</url></source>
+      <sourceUrl>fa1b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600601</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/6/a/4a7189ff8b2f677e0a7052999a9d8efe44c2c.swf</url></resource></object>
+    <object id="58_20166879" type="image" x="-144651.73722692713" y="62398.461696592785" r="2.6747701143501733e-31" s="112.62858640432312">
+      <source w="68" h="104" bt="-12.05" bl="-12">710600603<url>710600603.swf</url></source>
+      <sourceUrl>fa4b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600603</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/0/0/93263406270aa16f80f4e0622425ff1305361.swf</url></resource></object>
+    <object id="57_20166879" type="image" x="-103810.73304094459" y="44111.171861262614" r="2.6747701143501483e-31" s="120.05423461735455">
+      <source w="74" h="102" bt="-12.05" bl="-12">710600599<url>710600599.swf</url></source>
+      <sourceUrl>fa7b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600599</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/2/7/1a6749326d79b6c3e20ff65175222a4461b21.swf</url></resource></object>
+    <object id="62_20166879" type="image" x="7469.020104148085" y="30582.476111705102" r="1.476856073281276e-15" s="117.19727175225593">
+      <source w="74" h="102" bt="-12" bl="-12">710600613<url>710600613.swf</url></source>
+      <sourceUrl>fa7c.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600613</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/9/1/634d16c87f7000fcc35421015543aa15118d2.swf</url></resource></object>
+    <object id="83_20166879" type="image" x="147104.84972907737" y="62096.576972773306" r="2.643181922432503e-31" s="175.9262004639857">
+      <source w="87" h="117" bt="-12" bl="-12">710600623<url>710600623.swf</url></source>
+      <sourceUrl>fa5b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600623</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/0/a/21ea16c3c41c0b9b0cdcfac42f57a5e77b5b7.swf</url></resource></object>
+    <object id="85_20166879" type="image" x="106309.8488447117" y="96459.94922002658" r="1.5445496047101328e-31" s="142.11094529361964">
+      <source w="68" h="140" bt="-12" bl="-12">710583053<url>710583053.swf</url></source>
+      <sourceUrl>fa2.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583053</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/1/a/271a010b79d29ffc6dcb6d1acd90ec0fa4460.swf</url></resource></object>
+    <object id="118_20166879" type="persistentgroup" x="92942.91026144623" y="101068.6815430767" r="1.544549604710149e-31" s="139.31940509780995">
+      <m o="15_20166879"/>
+      <m o="56_20166879"/>
+      <m o="85_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="96_20166879" type="image" x="154135.1760688583" y="69887.17908257966" r="2.6431819224325024e-31" s="229.99627317517846">
+      <source w="184" h="117" bt="-55.95" bl="-14.5">709438819<url>709438819.swf</url></source>
+      <sourceUrl>fal.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709438819</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/3/6/b81ff032fb81101fdb8e37a3ad009c7577e09.swf</url></resource></object>
+    <object id="116_20166879" type="persistentgroup" x="154135.1760688583" y="66034.14820758242" r="2.6431819224325164e-31" s="325.6464948492697">
+      <m o="38_20166879"/>
+      <m o="37_20166879"/>
+      <m o="83_20166879"/>
+      <m o="96_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="89_20166879" type="image" x="21958.187787876475" y="70455.17223023777" r="1.3399095443317365e-31" s="127.82155194863495">
+      <source w="74" h="102" bt="-12.05" bl="-12">710594611<url>710594611.swf</url></source>
+      <sourceUrl>fa7.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594611</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/f/3/d249224ec04ebbfcea245f12cd31ec905ea18.swf</url></resource></object>
+    <object id="90_20166879" type="image" x="25250.70366591739" y="76394.14550689688" r="1.3399095443317339e-31" s="148.20731734154433">
+      <source w="68" h="104" bt="-12" bl="-12">710594609<url>710594609.swf</url></source>
+      <sourceUrl>fa6.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710594609</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/0/1/18deb7075f0f48e5205ea90576d3456d8207a.swf</url></resource></object>
+    <object id="91_20166879" type="image" x="18046.77619020476" y="76394.34949725584" r="1.3399095443317343e-31" s="159.0582792623625">
+      <source w="87" h="117" bt="-12" bl="-12">710600623<url>710600623.swf</url></source>
+      <sourceUrl>fa5b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600623</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/0/a/21ea16c3c41c0b9b0cdcfac42f57a5e77b5b7.swf</url></resource></object>
+    <object id="119_20166879" type="persistentgroup" x="20702.239515342568" y="74817.30363232196" r="1.3399095443317192e-31" s="160.5972082090062">
+      <m o="89_20166879"/>
+      <m o="90_20166879"/>
+      <m o="91_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="92_20166879" type="image" x="-9474.98267211227" y="30602.119719791674" r="1.4768560732812768e-15" s="120.59092412473355">
+      <source w="68" h="140" bt="-12" bl="-12">710583053<url>710583053.swf</url></source>
+      <sourceUrl>fa2.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583053</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/1/a/271a010b79d29ffc6dcb6d1acd90ec0fa4460.swf</url></resource></object>
+    <object id="93_20166879" type="image" x="-4815.306900442527" y="34153.017220491965" r="4.687261664609644e-15" s="110.76214117470967">
+      <source w="88" h="123" bt="-12.05" bl="-12">710583051<url>710583051.swf</url></source>
+      <sourceUrl>fa3.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583051</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/a/e/cd091a4e4c3ae5aaf34761189fe420cc556c8.swf</url></resource></object>
+    <object id="120_20166879" type="persistentgroup" x="-887.9346604436032" y="31570.391968765318" r="1.4768560732812595e-15" s="156.48834309810064">
+      <m o="62_20166879"/>
+      <m o="92_20166879"/>
+      <m o="93_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="104_20166879" type="image" x="-109802.15625660279" y="48440.60693398195" r="2.6747701143501833e-31" s="133.4145053208065">
+      <source w="87" h="117" bt="-12" bl="-12">710600623<url>710600623.swf</url></source>
+      <sourceUrl>fa5b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600623</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/0/a/21ea16c3c41c0b9b0cdcfac42f57a5e77b5b7.swf</url></resource></object>
+    <object id="108_20166879" type="image" x="-92157.84511986517" y="44107.78419688661" r="2.674770114350153e-31" s="145.32002171436466">
+      <source w="243" h="173" bt="-12.05" bl="-12">710633187<url>710633187.swf</url></source>
+      <sourceUrl>haz%20kek.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710633187</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/0/8/fe5167e1ca9ecc44d91a085bce22dce415e84.swf</url></resource></object>
+    <object id="60_20166879" type="image" x="-79338.24558764139" y="44103.0414667602" r="2.6747701143501873e-31" s="115.5526806775624">
+      <source w="73" h="102" bt="-12.05" bl="-12">710600607<url>710600607.swf</url></source>
+      <sourceUrl>fa8c.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600607</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/f/0/f126961f32ec8aa1a0f5d9f2acce923f30a02.swf</url></resource></object>
+    <object id="111_20166879" type="image" x="-123840.6374313658" y="54980.15424570059" r="2.6747701143501763e-31" s="116.78063340546406">
+      <source w="311" h="198" bt="-13.25" bl="-12">710567493<url>710567493.swf</url></source>
+      <sourceUrl>haz%20barokk.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710567493</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/8/c/481c35388307aaa0c79fd15e927571f8c7c1c.swf</url></resource></object>
+    <object id="114_20166879" type="image" x="-138316.80484352756" y="67559.90714009413" r="2.6747701143502052e-31" s="106.8883944192079">
+      <source w="88" h="123" bt="-12" bl="-12">710600605<url>710600605.swf</url></source>
+      <sourceUrl>fa3b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600605</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/c/b/052e99fe523ea11e038b76df755c68e8c85d2.swf</url></resource></object>
+    <object id="27_20166879" type="image" x="-136715.74179692875" y="70652.03854708266" r="2.6747701143501706e-31" s="157.06357567793071">
+      <source w="184" h="117" bt="-55.95" bl="-14.5">709438819<url>709438819.swf</url></source>
+      <sourceUrl>fal.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709438819</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/3/6/b81ff032fb81101fdb8e37a3ad009c7577e09.swf</url></resource></object>
+    <object id="110_20166879" type="image" x="-101745.51508992631" y="58026.991492908775" r="2.6747701143501803e-31" s="151.36959918418344">
+      <source w="243" h="172" bt="-12.05" bl="-12">710633193<url>710633193.swf</url></source>
+      <sourceUrl>haz%20piros.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710633193</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/2/f/5268d9653f579ea21e288b5797af9fce31e65.swf</url></resource></object>
+    <object id="61_20166879" type="image" x="-108137.45798216264" y="70649.45705114242" r="2.6747701143501873e-31" s="103.81411764721143">
+      <source w="73" h="102" bt="-12" bl="-12">710600609<url>710600609.swf</url></source>
+      <sourceUrl>fa8b.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600609</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/5/6/88cf16da2e3133acde048c5aa2dcc5a23e8a7.swf</url></resource></object>
+    <object id="109_20166879" type="image" x="-124915.88210435584" y="73279.63967278472" r="2.6747701143501693e-31" s="125.5079956669961">
+      <source w="300" h="209" bt="-13.25" bl="-12">710633191<url>710633191.swf</url></source>
+      <sourceUrl>haz%20zold%20ajtos.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710633191</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/6/a/8d696adf89071628cab5c67d1a1e6e28ce000.swf</url></resource></object>
+    <object id="112_20166879" type="image" x="-140285.7153789455" y="54980.15424570059" r="2.6747701143501816e-31" s="90.70226226754981">
+      <source w="68" h="140" bt="-12" bl="-12">710583053<url>710583053.swf</url></source>
+      <sourceUrl>fa2.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710583053</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/1/a/271a010b79d29ffc6dcb6d1acd90ec0fa4460.swf</url></resource></object>
+    <object id="113_20166879" type="image" x="-87890.0655387928" y="54978.79917995028" r="2.6747701143501115e-31" s="113.15148429031741">
+      <source w="74" h="102" bt="-12" bl="-12">710600613<url>710600613.swf</url></source>
+      <sourceUrl>fa7c.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>710600613</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/9/1/634d16c87f7000fcc35421015543aa15118d2.swf</url></resource></object>
+    <object id="11_13415665" type="persistentgroup" x="-90093.99722330766" y="56469.61460022518" r="2.674770114350138e-31" s="321.8007123943914">
+      <m o="111_20166879"/>
+      <m o="109_20166879"/>
+      <m o="97_20166879"/>
+      <m o="4_20166879"/>
+      <m o="58_20166879"/>
+      <m o="57_20166879"/>
+      <m o="104_20166879"/>
+      <m o="108_20166879"/>
+      <m o="60_20166879"/>
+      <m o="114_20166879"/>
+      <m o="27_20166879"/>
+      <m o="110_20166879"/>
+      <m o="61_20166879"/>
+      <m o="112_20166879"/>
+      <m o="113_20166879"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="2_13415665" type="text" x="-69962.0226003097" y="-31865.175225714407" r="2.5402893627978434e-31" s="677.673135111735" class="head">
+      <height>58.32</height>
+      <width>300.7706481665796</width>
+      <p align="center">
+        <text color="16777215"><![CDATA[Dokąd zmierzasz Wrocławiu? ]]></text>
+      </p>
+    </object>
+    <object id="7" type="button" x="109060.65079159128" y="43566.78518164667" r="18.46334734227822" s="38.61021700707139" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="73_20166879" type="image" x="105294.8672449896" y="37760.52901847328" r="7.892659918459697" s="141.88478574041054">
+      <source w="147" h="109" bt="-12.05" bl="-12">709426667<url>709426667.swf</url></source>
+      <sourceUrl>auto%20piros.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>709426667</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/f/7/f3271fa35ab6a6ff0acef91e4fbbf2ab7bdc3.swf</url></resource></object>
+    <object id="69_13415665" type="text" x="205689.02929703248" y="114929.01681397505" r="3.4198926685156424e-31" s="62.92177940358408" class="body">
+      <height>29.28</height>
+      <width>320.9090909090909</width>
+      <p align="justify">
+        <text><![CDATA[design by Dóri Sirály for Prezi]]></text>
+      </p>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="7_178794639" type="button" x="-87890.87562889815" y="99780.7078384798" r="1.4249433130000332e-31" s="37.753384662585304" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="5_178794639" type="button" x="-87889.78801165136" y="100589.1040757033" r="1.699246377467624e-31" s="31.658995264854664" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="24_4" type="text" x="-28913.65426195638" y="28073.162370064405" r="1.4693105154660674e-15" s="39.322994947198524" class="body">
+      <height>87.84</height>
+      <width>642.4221214502834</width>
+      <p align="center">
+        <text><![CDATA[Doszliśmy zatem do wniosku, iż liczba mieszkańców powiatu z roku na rok wzrasta. Możemy się za tem spodziewać także rosnącej liczby aut.]]></text>
+      </p>
+      <layout>
+        <layout-element role="body" parent-id="22_20166879"/>
+      </layout>
+    </object>
+    <object id="15" type="button" x="20779.57263675412" y="-20142.89134899446" r="1.1892146214902224e-15" s="48.58474570648631" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>632.4255685014068</w>
+        <h>406.8608805353065</h>
+      </size>
+    </object>
+    <object id="8" type="text" x="15471.745427113712" y="-26788.095691602324" r="1.5490520032806992e-15" s="74.5974826580023" class="strong">
+      <height>46.59375</height>
+      <width>307.3860003511297</width>
+      <p align="center">
+        <text><![CDATA[Temat projektu]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="5_178700802" type="image" x="-17583.213510295645" y="15387.842366379471" r="4.297229849901712e-31" s="3.1297158225839037">
+      <source w="571" h="988" bt="6.45" bl="215.3">922655141<url>922655141.swf</url></source>
+      <sourceUrl>question_dark_sticker.swf</sourceUrl>
+    <resource><id>922655141</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/5/d/731b0ec8d1ea4c31179df7efc461c0549d88c.swf</url></resource></object>
+    <object id="10" type="text" x="-28188.81899342845" y="15724.444490645612" r="2.217465137083145e-30" s="43.66859158827593" class="strong">
+      <height>46.59375</height>
+      <width>567.893612583616</width>
+      <p align="center">
+        <text><![CDATA[A co z liczbą aut na drogach ]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="12" type="text" x="54770.77744283153" y="104861.9089397167" r="18.463347342278183" s="48.19395865249333" class="strong">
+      <height>46.59375</height>
+      <width>245.1733879367198</width>
+      <p align="center">
+        <text><![CDATA[Wybór modelu]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="28" type="image" x="141743.45536916205" y="93752.78854399541" r="-6.469734748214466" s="59.969272457757434">
+      <source w="370" h="136">4133110346<url>4133110346.png</url></source>
+      <sourceUrl>urbanizacjaEtapy.png</sourceUrl>
+    <resource><id>4133110346</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/1/b/7ba794d0464139a79b02a253831a3fffd513d.png</url></resource></object>
+    <object id="14" type="text" x="141210.5972710776" y="86967.32016507295" r="-6.469734748214463" s="46.64189827309513" class="strong">
+      <height>46.59375</height>
+      <width>534.0824755492778</width>
+      <p align="center">
+        <text><![CDATA[Etapy rozwoju miast]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="44" type="shape" x="-68118.51016431303" y="-75855.45546489689" r="90" s="60.305440223378845" class="line1">
+      <geom type="line">
+        <sp>-162.62082938640768 0</sp>
+        <ep>162.6208293864077 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="45" type="shape" x="-68128.9297422806" y="-66025.74941167276" r="-2.10876468266521e-46" s="55.03391852589269" class="circle poly1">
+      <geom type="circle">
+        <r>20</r>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="46" type="shape" x="-77244.50209517541" y="-61236.70896430564" r="152.20070158499146" s="60.305440223378795" class="line1">
+      <geom type="line">
+        <sp>171.12757179010922 0</sp>
+        <ep>-171.12757179010924 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="47" type="shape" x="-58990.60414678948" y="-61236.70896430564" r="27.799298415008558" s="60.30544022337878" class="line1">
+      <geom type="line">
+        <sp>171.12757179010922 0</sp>
+        <ep>-171.12757179010924 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="1_30863873" type="image" x="-69924.04455566531" y="-86784.80662320515" r="-2.1087646826652114e-46" s="21.610299478712985">
+      <source w="861" h="844" bt="11.25" bl="5.55">1648102073<url>1648102073.swf</url></source>
+      <sourceUrl>helicopter.swf</sourceUrl>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    <resource><id>1648102073</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/3/7/b03d9148767132cba8237a40aaebf8d3fe5f1.swf</url></resource></object>
+    <object id="2_30863873" type="persistentgroup" x="-68117.55312098245" y="-76005.11552540863" r="-2.1087646826652067e-46" s="181.26567181731565">
+      <m o="44"/>
+      <m o="45"/>
+      <m o="46"/>
+      <m o="47"/>
+      <m o="1_30863873"/>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>suburb-to-city2</parentTemplate>
+      </meta>
+    </object>
+    <object id="4" type="text" x="117905.80679863055" y="-13370.86387772883" r="1.873132844076446e-31" s="114.88012329332359" class="strong">
+      <height>46.59375</height>
+      <width>358.03200000000004</width>
+      <p align="center">
+        <text><![CDATA[Wrocław]]></text>
+      </p>
+    </object>
+    <object id="9" type="button" x="117064.53183116931" y="43664.038026205024" r="18.46334734227823" s="16.214068887668045" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="16" type="text" x="22640.56954290038" y="-18181.308128146684" r="4.376551374365798e-31" s="73.75181289975997" class="body">
+      <height>117.12</height>
+      <width>417.85160170878373</width>
+      <p>
+        <text><![CDATA[Prognoza stopnia natężenia ruchu na wjazdach do Wrocławia na podstawie predykcji liczby ludności i jej korelacji z prędkościami samochodów.]]></text>
+      </p>
+    </object>
+    <object id="17" type="button" x="-69928.98852792193" y="-32402.02482632916" r="9.108059846490707e-16" s="126.87156419552795" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>963.3541773999474</w>
+        <h>277.54798447287317</h>
+      </size>
+    </object>
+    <object id="19" type="text" x="117899.81256376921" y="-2386.715008971629" r="1.873132844076446e-31" s="114.88012329332359" class="body">
+      <height>146.4</height>
+      <width>386.39733464979287</width>
+      <p align="center">
+        <text><![CDATA[Jest głównym miastem aglomeracji wrocławskiej. Czwarte pod względem liczby ludności miasto w Polsce – 634 487 mieszkańców, piąte pod względem powierzchni – 293 km².]]></text>
+      </p>
+    </object>
+    <object id="20" type="button" x="109314.10088831215" y="11402.417644025454" r="9.388013243438949e-16" s="15.386026967930972" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>515.2389221191406</h>
+      </size>
+    </object>
+    <object id="21" type="button" x="125438.28598894065" y="11403.499223385572" r="3.8135127717922484e-31" s="14.10679240829867" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>832.3198089599609</w>
+        <h>537.2822265625</h>
+      </size>
+    </object>
+    <object id="22" type="image" x="109313.74036185876" y="11402.417644025454" r="2.2737278496104e-31" s="5.915003529037886">
+      <source w="1600" h="1200">4133017835<url>4133017835.png</url></source>
+      <sourceUrl>mapa_rozwoj.png</sourceUrl>
+    <resource><id>4133017835</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/2/a/0689756a2bfe2896cdaf5a94d812be1111231.png</url></resource></object>
+    <object id="24" type="image" x="117106.19755337424" y="43677.98914083627" r="18.463347342278166" s="11.847662689620906">
+      <source w="1009" h="939">4133036996<mask x="0" y="0" w="1009" h="849"/>
+      <url>4133036996.jpg</url></source>
+      <sourceUrl>grafika1.jpg</sourceUrl>
+    <resource><id>4133036996</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/0/0/ed63975d4aba7d0547c47ecd8abb1b6307d59.jpg</url></resource></object>
+    <object id="25" type="button" x="107318.67200852929" y="49819.389160914456" r="18.46334734227818" s="12.469603431529482" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="26" type="image" x="107359.43304120346" y="49584.332793274814" r="18.46334734227818" s="16.025974483134583">
+      <source w="612" h="544">4133088458<mask x="34" y="159" w="554" h="318"/>
+      <url>4133088458.jpg</url></source>
+      <sourceUrl>wroclaw_odleglosc.jpg</sourceUrl>
+    <resource><id>4133088458</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/3/8/91434fbfd3de342d1620c7f62f50a81a65938.jpg</url></resource></object>
+    <object id="32" type="image" x="125438.28598894065" y="11403.499223385572" r="1.0004937276903503e-15" s="14.437294401864516">
+      <source w="561" h="420">4133121932<url>4133121932.png</url></source>
+      <sourceUrl>ludnosc%20(1).png</sourceUrl>
+    <resource><id>4133121932</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/1/4/db73ecd3fc3ff4e741697f3059f0b33b18f7c.png</url></resource></object>
+    <object id="0_162173415" type="button" x="44704.680145533486" y="105392.44147609928" r="18.463347342278205" s="7.12081741867159" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="1_162173415" type="text" x="44723.42176435529" y="105231.52116490343" r="18.463347342278226" s="12.491043175015744" class="body">
+      <height>87.84</height>
+      <width>379.8</width>
+      <p align="center">
+        <text><![CDATA[Intensywność migracji Wrocław-Powiat]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[ jest zależna od liczby ludności ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[zarówno w Mieście jak i w Powiecie. ]]></text>
+      </p>
+    </object>
+    <object id="2_162173415" type="image" x="44241.64505408886" y="106594.55058052528" r="18.46334734227823" s="11.312078326104643">
+      <source w="87" h="103">726469945<url>726469945.swf</url></source>
+      <sourceUrl>emergency_g.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>726469945</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/e/a/0818e1c4245de9cf42dc53ff3620c86e82a1d.swf</url></resource></object>
+    <object id="3_162173415" type="image" x="45462.055686948675" y="106903.0958985069" r="18.46334734227822" s="2.740873441360678">
+      <source w="210" h="321">606503151<url>606503151.swf</url></source>
+      <sourceUrl>factory_g.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606503151</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/0/0/7e0a8ad4e85f142611066489d7f6df89bddcd.swf</url></resource></object>
+    <object id="4_162173415" type="image" x="42936.76953987228" y="106172.0335453383" r="18.463347342278244" s="2.7205330076585614">
+      <source w="241" h="231">606511239<url>606511239.swf</url></source>
+      <sourceUrl>house_g.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606511239</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/2/b/940825bc3544c0a597e5f6ae10e99f4a56eff.swf</url></resource></object>
+    <object id="5_162173415" type="image" x="45862.21026437146" y="107081.71566750301" r="18.463347342278205" s="3.192668148544857">
+      <source w="131" h="254">654383501<url>654383501.swf</url></source>
+      <sourceUrl>professional-dark_office_g.swf</sourceUrl>
+    <resource><id>654383501</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/3/7/d3774150872fc995deb89b1c496f3d8faae60.swf</url></resource></object>
+    <object id="6_162173415" type="shape" x="46094.089257802414" y="110611.02137950942" r="45.39136633705343" s="57.684232539588585" class="line3">
+      <geom type="arrow">
+        <sp>-40.15174273480108 -4.844161981559896</sp>
+        <ep>40.15174273480109 -4.844161981559896</ep>
+        <b>9.688323963119792</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="7_162173415" type="button" x="52545.21642412037" y="113700.64241165077" r="18.463347342278173" s="10.562689565018028" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="9_162173415" type="image" x="52606.21561325682" y="113623.87612012742" r="18.463347342278187" s="2.6185486506624054">
+      <source w="458" h="356">606543455<url>606543455.swf</url></source>
+      <sourceUrl>stock_g.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606543455</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/a/3/b9b8cda758b48120b0bd49b4b4faa5d55e9c8.swf</url></resource></object>
+    <object id="8_162173415" type="text" x="52526.74817911993" y="113747.28389351362" r="18.463347342278222" s="16.251961758870323" class="body">
+      <height>234.24</height>
+      <width>384.2986920580471</width>
+      <p align="justify">
+        <text><![CDATA[Im więcej ludzi mieszka we Wrocławiu tym chętniej wyjeżdżają oni do Powiatu. ]]></text>
+      </p>
+      <p align="justify">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="justify">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="justify">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="justify">
+        <text><![CDATA[Gdy liczba mieszkańców Powiatu jest mała ludzie niechętnie tu przyjeżdżają, wolą zostać w Mieście.]]></text>
+      </p>
+    </object>
+    <object id="0_178700802" type="button" x="-37900.74386910395" y="20761.75993610493" r="5.997909704206388e-31" s="8.96919688209728" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="1_178700802" type="button" x="-28589.88475755407" y="20761.10611244729" r="4.362947784537995e-31" s="9.24772120962346" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>763.3230590820313</w>
+        <h>581.9451916068792</h>
+      </size>
+    </object>
+    <object id="2_178700802" type="image" x="-37900.74386910395" y="20761.75993610493" r="1.4830555923089015e-31" s="9.068512552236118">
+      <source w="580" h="435">4133232866<url>4133232866.png</url></source>
+      <sourceUrl>LudnoscSamochodyPowiat.png</sourceUrl>
+    <resource><id>4133232866</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/6/5/d9dc2be27b2d9daf7fbd4406eb17e8027a719.png</url></resource></object>
+    <object id="3_178700802" type="image" x="-28591.161269942957" y="20650.492550688585" r="1.3887890798244318e-31" s="9.684053863828932">
+      <source w="561" h="420">4133234285<url>4133234285.png</url></source>
+      <sourceUrl>zaleznosc.png</sourceUrl>
+    <resource><id>4133234285</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/c/4/3b6c8c7743e31548baa64edca9e239fa2fb7d.png</url></resource></object>
+    <object id="10_162173415" type="shape" x="58891.63920255872" y="116534.45496197656" r="-2.7618307612195476" s="57.68423253958863" class="line3">
+      <geom type="arrow">
+        <sp>-40.67437935122012 -6.419057224619592</sp>
+        <ep>40.674379351220125 -6.419057224619592</ep>
+        <b>12.838114449239184</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="11_162173415" type="button" x="66262.35793260612" y="113113.73251717325" r="18.46334734227817" s="13.20699339895094" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="12_162173415" type="text" x="67226.40406609513" y="110400.61820999294" r="18.46334734227817" s="32.14611738854891" class="strong">
+      <height>93.1875</height>
+      <width>237.5151666575779</width>
+      <p align="center">
+        <text><![CDATA[MODEL ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[LOTKI-VOLTERRY]]></text>
+      </p>
+    </object>
+    <object id="6_178700802" type="button" x="-19387.875444861445" y="20761.31465184158" r="5.878735410216929e-31" s="9.151021310565127" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>588.076171875</h>
+      </size>
+    </object>
+    <object id="14_162173415" type="button" x="62982.489621079745" y="112282.73502713139" r="18.463347342278173" s="2.386493730156139" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>792.7482428428716</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="8_178700802" type="image" x="-41775.075051978114" y="14966.98295218402" r="-8.642565343408087" s="18.100586310406555">
+      <source w="191" h="61" bt="72.4" bl="6.3">2819064634<url>2819064634.swf</url></source>
+      <sourceUrl>prezilight_car.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>2819064634</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/f/9/1bf5fac2f2bc24dcf89a89292baa42235be09.swf</url></resource></object>
+    <object id="20_162173415" type="text" x="63145.68399754588" y="111770.30451953618" r="18.463347342278222" s="4.034653898758251" class="strong">
+      <height>46.59375</height>
+      <width>-242.1796875</width>
+      <p>
+        <text><![CDATA[Portret fazowy: ]]></text>
+      </p>
+    </object>
+    <object id="21_162173415" type="image" x="62665.01342007588" y="111957.53396034686" r="18.46334734227817" s="1.616075660737957">
+      <source w="480" h="186">4133312885<url>4133312885.PNG</url></source>
+      <sourceUrl>stacjonarne.PNG</sourceUrl>
+    <resource><id>4133312885</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/0/d/e8b9b007c81ef7dcbefa7a97d2ef8a3b3615a.PNG</url></resource></object>
+    <object id="23_162173415" type="image" x="63322.80385393372" y="112519.67283943476" r="18.46334734227818" s="2.2508385167088485">
+      <source w="350" h="279">4133319329<url>4133319329.png</url></source>
+      <sourceUrl>1408foma2_thumb_350px.png</sourceUrl>
+    <resource><id>4133319329</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/1/3/57815f10c2226b73d93f4d34a47bdb96a60bf.png</url></resource></object>
+    <object id="25_162173415" type="image" x="62423.37498263189" y="112562.25487290202" r="18.463347342278222" s="1.6339220855874879">
+      <source w="392" h="107">4133326673<url>4133326673.PNG</url></source>
+      <sourceUrl>Przechwytywanie.PNG</sourceUrl>
+    <resource><id>4133326673</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/b/5/cce45ca1e77c1d003d8f91eaa4b00e333079b.PNG</url></resource></object>
+    <object id="24_162173415" type="text" x="62535.600881612794" y="112274.07211443594" r="18.46334734227823" s="2.881895641970186" class="body">
+      <height>58.56</height>
+      <width>-269.03999999999996</width>
+      <p align="center">
+        <text><![CDATA[Rozwiązania oscylują wokół ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[punktu stacjonarnego:]]></text>
+      </p>
+    </object>
+    <object id="32_162173415" type="button" x="69356.22841173434" y="114355.693145336" r="18.46334734227818" s="2.3832922051390106" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="33_162173415" type="image" x="69410.17265398371" y="114188.01706763695" r="18.463347342278166" s="1.3389655427180926">
+      <source w="1066" h="547">4134205460<url>4134205460.png</url></source>
+      <sourceUrl>LVwykres.png</sourceUrl>
+    <resource><id>4134205460</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/4/5/4e677a378df212481ac8957a292fe248332f0.png</url></resource></object>
+    <object id="34_162173415" type="text" x="69212.9943751907" y="114734.21420875065" r="18.46334734227817" s="2.556441114179558" class="body">
+      <height>146.4</height>
+      <width>552</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Rozwiązania są okresowe. ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Oscylują wokół dodatniego punktu stacjonarnego ( niezależnego od warunków początkowych! )]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Maksima obu funkcji są przesunięte w czasie względem siebie ]]></text>
+      </p>
+    </object>
+    <object id="35_162173415" type="button" x="69891.63537937123" y="115056.46749530933" r="18.463347342278166" s="0.3924177396383403" class="circle">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <type>circle</type>
+      <size>
+        <w>600</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="36_162173415" type="text" x="69891.60564899475" y="115057.03858085348" r="18.46334734227816" s="0.46030490433725396" class="body">
+      <height>204.96</height>
+      <width>407.9117177637922</width>
+      <p align="justify">
+        <text><![CDATA[Nie jest to jednak idealne odwzorowanie zmian w liczbie ludności.]]></text>
+      </p>
+      <p align="justify">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="justify">
+        <text><![CDATA[W podstawowym modelu Lotki-Volterry zakładamy, że ludność Wrocławia rozwija się wykładniczo, bez ograniczenia w postaci ]]></text>
+        <text weight="bold"><![CDATA[pojemności środowiska]]></text>
+        <text><![CDATA[.]]></text>
+      </p>
+    </object>
+    <object id="0_162054195" type="button" x="155440.8726658925" y="98567.5765418668" r="18.463347342278198" s="6.005337304808981" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>641.5390625</h>
+      </size>
+    </object>
+    <object id="1_162054195" type="image" x="155721.52793360455" y="97833.61114744461" r="18.46334734227822" s="6.034259727556336">
+      <source w="682" h="278">4133172281<url>4133172281.png</url></source>
+      <sourceUrl>http%3A%2F%2F0103.static.prezi.com.s3.amazonaws.com%2Fmedia%2F6%2Fc%2Fb%2F62ec6950bb93a7eecdbe96084eec18feb0904.png</sourceUrl>
+    <resource><id>4133172281</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/c/b/62ec6950bb93a7eecdbe96084eec18feb0904.png</url></resource></object>
+    <object id="2_162054195" type="text" x="155207.65683004548" y="99438.25273402753" r="18.463347342278222" s="8.97199657021445" class="body">
+      <height>146.4</height>
+      <width>419.2320000000001</width>
+      <p>
+        <text><![CDATA[Wrocław prawdopodonie jest w fazie suburbanizacji. Kolejnym etapem jest dezubranizacja. Możemy zatem spodziewać się, że liczba ludności na przedmieściach będzie wzrastać, a w mieście maleć.]]></text>
+      </p>
+    </object>
+    <object id="3_162054195" type="shape" x="147315.88427803453" y="100548.95153442876" r="8.530265317194528" s="31.639774451013842" class="line3">
+      <geom type="arrow">
+        <sp>-129.72119131766812 -26.784921361243164</sp>
+        <ep>129.72119131766812 -26.784921361243164</ep>
+        <b>53.56984272248633</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="12_162054195" type="button" x="-87863.18180873827" y="82438.83357588963" r="-5.303835757244121e-47" s="33.7827421396617" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="2_178794639" type="button" x="-88590.60197505851" y="84945.88367983996" r="1.5881965710730133e-31" s="20.125768526254866" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>841.0382661130063</w>
+        <h>608.2152186249792</h>
+      </size>
+    </object>
+    <object id="8_178794639" type="button" x="-88249.81569647223" y="89965.6731808798" r="1.5225231209284428e-31" s="2.2446172409426937" class="circle">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="1657497" gradStartColor="1657497" borderColor="1657497" color="1657497"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="1657497" gradStartColor="1657497" borderColor="1657497" color="1657497"/>
+      <type>circle</type>
+      <size>
+        <w>893.8760233845213</w>
+        <h>893.8760233845213</h>
+      </size>
+    </object>
+    <object id="29_162054195" type="button" x="-88250.14896050545" y="90347.99844075507" r="1.5225231209284426e-31" s="1.2184643563762263" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="10_178794639" type="image" x="-88237.19927235578" y="90330.88295218961" r="1.5593871591484646e-31" s="1.095777154159731">
+      <source w="960" h="640">4150356812<url>4150356812.png</url></source>
+      <sourceUrl>http%3A%2F%2F0103.static.prezi.com.s3.amazonaws.com%2Fmedia%2F7%2Fa%2F2%2Facdd60043879f7f0af740d8f9cf0bf0e7be31.png</sourceUrl>
+    <resource><id>4150356812</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/a/2/acdd60043879f7f0af740d8f9cf0bf0e7be31.png</url></resource></object>
+    <object id="9_178794639" type="text" x="-88225.57882703636" y="90075.87937113391" r="1.110282533924874e-15" s="1.4931483695441166" class="strong strong-background">
+      <height>46.59375</height>
+      <width>538.3169339799321</width>
+      <p>
+        <text color="16777215"><![CDATA[Autostradowa Obwodnica Wrocławia]]></text>
+      </p>
+    </object>
+    <object id="12_178794639" type="button" x="-92801.23798599551" y="85512.99028606612" r="2.4930950811699433e-31" s="4.395525140189946" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="21_178794639" type="image" x="-92842.04300085768" y="86406.24214842815" r="2.0407365439220745e-31" s="5.369856358383923">
+      <source w="220" h="171">4150248986<url>4150248986.png</url></source>
+      <sourceUrl>http%3A%2F%2F0103.static.prezi.com.s3.amazonaws.com%2Fmedia%2F5%2F3%2Fb%2Feeff9f2e30c9ac7e1bcd5657e1528708f0e8e.png</sourceUrl>
+    <resource><id>4150248986</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/3/b/eeff9f2e30c9ac7e1bcd5657e1528708f0e8e.png</url></resource></object>
+    <object id="14_178794639" type="text" x="-92730.95530146216" y="84348.53170478792" r="2.9447791119155272e-31" s="5.083421733286599" class="strong">
+      <height>46.59375</height>
+      <width>391.6098368675811</width>
+      <p>
+        <text><![CDATA[Prawo Lewisa-Mogridge’a]]></text>
+      </p>
+    </object>
+    <object id="15_178794639" type="text" x="-88488.93680193716" y="84287.82359356419" r="2.944779111915527e-31" s="5.77640374158751" class="strong">
+      <height>46.59375</height>
+      <width>-250.1484375</width>
+      <p>
+        <text><![CDATA[Paradoks Braessa ]]></text>
+      </p>
+    </object>
+    <object id="19_162054195" type="button" x="-88508.09892497846" y="85521.10703127511" r="1.5881965710730131e-31" s="4.395444866012237" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="22_178794639" type="button" x="-84119.64324749752" y="85522.70969533174" r="7.495534371162143e-31" s="4.395426785128632" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="23_178794639" type="image" x="-84126.88731809353" y="86396.34397090031" r="6.047579746052762e-46" s="1.172777768813854">
+      <source w="1200" h="794">4150332134<mask x="0" y="0" w="1199" h="794"/>
+      <url>4150332134.png</url></source>
+      <sourceUrl>http%3A%2F%2F0103.static.prezi.com.s3.amazonaws.com%2Fmedia%2F5%2F1%2F2%2F3e7a45e03b0fb95edef6f29f7dd03a846c627.png</sourceUrl>
+    <resource><id>4150332134</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/1/2/3e7a45e03b0fb95edef6f29f7dd03a846c627.png</url></resource></object>
+    <object id="3_178794639" type="text" x="-88464.08066528715" y="82091.71528067131" r="1.4073417731841055e-15" s="24.3929228547753" class="body">
+      <height>322.0799999999999</height>
+      <width>594.0474384793429</width>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[Liczba osób dojeżdżających codziennie do Wrocławia wzrasta. Na wjazdach do miasta tworzą się coraz większe korki. ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[Złoty środek - poszerzenie dróg lub budowa nowych. ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[                                  Nic bardziej mylnego.]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+    </object>
+    <object id="24_178794639" type="text" x="-83986.20440438183" y="84404.91970360458" r="3.45670378777229e-31" s="5.251276128715917" class="strong">
+      <height>46.59375</height>
+      <width>439.480566661247</width>
+      <p>
+        <text><![CDATA[Paradoks Downsa-Thomsona]]></text>
+      </p>
+    </object>
+    <object id="98_162173415" type="text" x="25930.255930785694" y="33359.7517059423" r="7.892659918459696" s="50.864565503104224" class="strong">
+      <height>46.59375</height>
+      <width>-424.3125</width>
+      <p>
+        <text><![CDATA[Model migracji Miasto-Powiat]]></text>
+      </p>
+    </object>
+    <object id="15_162173415" type="button" x="15478.924116425294" y="36571.347609150274" r="7.892659918459693" s="7.62882151522931" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>813.1019910812379</w>
+        <h>571.8766069412231</h>
+      </size>
+    </object>
+    <object id="17_162173415" type="button" x="35293.39906445172" y="39453.510187113076" r="7.892659918459693" s="7.25131180628595" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>853.98828125</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="37_162173415" type="image" x="15667.505547553295" y="35874.07834267393" r="7.892659918459692" s="5.134315260460005">
+      <source w="413" h="139">4146216419<url>4146216419.PNG</url></source>
+      <sourceUrl>Przechfghwytywanie.PNG</sourceUrl>
+    <resource><id>4146216419</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/8/9/9f25dfe2e5da45de9212b0095ac10039a5939.PNG</url></resource></object>
+    <object id="19_162173415" type="text" x="15614.285644454574" y="35031.51185461386" r="7.892659918459693" s="13.33153653962665" class="strong">
+      <height>46.59375</height>
+      <width>-216.84375</width>
+      <p>
+        <text><![CDATA[Izokliny zerowe]]></text>
+      </p>
+    </object>
+    <object id="38_162173415" type="image" x="13647.805306296836" y="37166.70223679063" r="7.892659918459696" s="5.967703201677211">
+      <source w="350" h="342">4146217805<url>4146217805.png</url></source>
+      <sourceUrl>izokliny1.png</sourceUrl>
+    <resource><id>4146217805</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/a/0/b1fa730486256990427bff1274e6930451a52.png</url></resource></object>
+    <object id="39_162173415" type="image" x="17087.42436701146" y="37643.12366138782" r="7.892659918459696" s="5.967703201677211">
+      <source w="350" h="342">4146219128<url>4146219128.png</url></source>
+      <sourceUrl>http%3A%2F%2F0103.static.prezi.com.s3.amazonaws.com%2Fmedia%2F9%2Ff%2Fb%2F9d3bd31733651f4ae778e72e694bcb5f957bd.png</sourceUrl>
+    <resource><id>4146219128</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/f/b/9d3bd31733651f4ae778e72e694bcb5f957bd.png</url></resource></object>
+    <object id="40_162173415" type="image" x="15362.253497062871" y="37404.27352326648" r="7.892659918459693" s="5.429110082179579">
+      <source w="104" h="137">4146222962<url>4146222962.PNG</url></source>
+      <sourceUrl>pojizo.PNG</sourceUrl>
+    <resource><id>4146222962</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/e/b/9ea4d59b60d464c4eb7e3b6b7f89c4568eae0.PNG</url></resource></object>
+    <object id="41_162173415" type="shape" x="15163.533206641834" y="36746.57338401972" r="46.0597311573674" s="4.015232796311906" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="8028290" gradStartColor="8028290" borderColor="8028290" color="8028290"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="8028290" gradStartColor="8028290" borderColor="8028290" color="8028290"/>
+      <geom type="arrow">
+        <sp>88.1130128337927 22.211836952367243</sp>
+        <ep>-88.11301283379271 22.21183695236723</ep>
+        <b>44.42367390473448</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="42_162173415" type="shape" x="15525.278130121498" y="38076.3624171283" r="37.892659934439926" s="4.015232796311901" class="line4">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="8028290" gradStartColor="8028290" borderColor="8028290" color="8028290"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="8028290" gradStartColor="8028290" borderColor="8028290" color="8028290"/>
+      <geom type="arrow">
+        <sp>-99.48718484192146 -20.869458255548132</sp>
+        <ep>99.48718484192148 -20.869458255548132</ep>
+        <b>41.738916511096264</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="45_162173415" type="image" x="15125.272449808155" y="36808.918895626084" r="7.892659918459693" s="1.917287721979521">
+      <source w="93" h="92" bt="-47.1" bl="-47">606697679<url>606697679.swf</url></source>
+      <sourceUrl>no.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606697679</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/a/8/4d95cff156db88d9d7509198ea88461dcc856.swf</url></resource></object>
+    <object id="46_162173415" type="image" x="15571.296554520875" y="38008.48173922264" r="7.892659918459693" s="1.9598941158012884">
+      <source w="120" h="90" bt="-45.55" bl="-59.3">606739303<url>606739303.swf</url></source>
+      <sourceUrl>yes.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606739303</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/c/58f388cfb7b62d8b6342001bed3fd384855d3.swf</url></resource></object>
+    <object id="54_162173415" type="button" x="18006.820327012596" y="36990.61420250838" r="7.892659918459693" s="0.6108598318904418" class="circle">
+      <type>circle</type>
+      <size>
+        <w>600</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="55_162173415" type="image" x="17996.833794434744" y="37062.59727476965" r="7.892659918459696" s="0.7471609062461233">
+      <source w="357" h="83">4146277493<url>4146277493.PNG</url></source>
+      <sourceUrl>srednia.PNG</sourceUrl>
+    <resource><id>4146277493</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/4/5/2a2fa518f9eb0d1d4dc922cf26bf27d70929c.PNG</url></resource></object>
+    <object id="56_162173415" type="text" x="18022.246758663096" y="36890.37975571764" r="7.892659918459696" s="0.79995846725385" class="strong">
+      <height>46.59375</height>
+      <width>-280.59375</width>
+      <p>
+        <text><![CDATA[Punkty stacjonarne]]></text>
+      </p>
+    </object>
+    <object id="57_162173415" type="image" x="17897.448357470374" y="36929.95702088065" r="7.892659918459696" s="0.5250703818650466">
+      <source w="113" h="119">4146277925<url>4146277925.PNG</url></source>
+      <sourceUrl>stacj.PNG</sourceUrl>
+    <resource><id>4146277925</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/4/c/094419f04f263954d47aa76c08b8bba288ac9.PNG</url></resource></object>
+    <object id="58_162173415" type="text" x="17943.861953788615" y="36918.112408429" r="7.892659918459693" s="0.6010206365543573" class="body">
+      <height>29.28</height>
+      <width>-57.76800000000001</width>
+      <p>
+        <text><![CDATA[siodło]]></text>
+      </p>
+    </object>
+    <object id="59_162173415" type="text" x="18046.68635852375" y="36950.9957700195" r="7.892659918459697" s="0.6010206365543573" class="body">
+      <height>29.28</height>
+      <width>411.622278574353</width>
+      <p>
+        <text><![CDATA[węzeł stabilny asymptotycznie lub siodło]]></text>
+      </p>
+    </object>
+    <object id="60_162173415" type="text" x="18043.898910526077" y="36971.21486635163" r="7.892659918459697" s="0.6010206365543573" class="body">
+      <height>29.28</height>
+      <width>411.622278574353</width>
+      <p>
+        <text><![CDATA[węzeł lub ognisko stabilne]]></text>
+      </p>
+    </object>
+    <object id="61_162173415" type="shape" x="18006.625945788808" y="36993.39163365235" r="7.892659296697335" s="0.6629668138813911" class="line4">
+      <geom type="line">
+        <sp>-242.17081097179815 0</sp>
+        <ep>242.17081097179815 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="16_162173415" type="image" x="35293.51563768215" y="39453.51018711311" r="7.892659918459696" s="4.715357393725404">
+      <source w="1200" h="900">4146662606<mask x="122" y="43" w="998" h="801"/>
+      <url>4146662606.png</url></source>
+      <sourceUrl>plot2.png</sourceUrl>
+    <resource><id>4146662606</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/8/6/5d16f054138dcd7c9ae808a17d65b4f335db5.png</url></resource></object>
+    <object id="18_162173415" type="button" x="37902.81311158552" y="39265.94385939104" r="7.892659918459693" s="0.7051754232653734" class="circle">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <type>circle</type>
+      <size>
+        <w>600</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="43_162173415" type="shape" x="37849.05625692337" y="39728.57984895668" r="-48.77503708772301" s="3.1720606912983422" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="arrow">
+        <sp>149.82765188012235 -22.18605219799564</sp>
+        <ep>-149.82765188012235 -22.18605219799571</ep>
+        <b>-44.37210439599135</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="44_162173415" type="shape" x="37961.54034112328" y="38853.97300012471" r="-114.82759319478318" s="3.1720606912983413" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="arrow">
+        <sp>-160.9112757094318 -24.475035771305304</sp>
+        <ep>160.9112757094318 -24.475035771305304</ep>
+        <b>48.95007154261061</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="47_162173415" type="image" x="37914.315003652155" y="39166.07945867731" r="7.892659918459697" s="1.1774339067654311">
+      <source w="115" h="59">4146717080<url>4146717080.PNG</url></source>
+      <sourceUrl>sredniekoncowe.PNG</sourceUrl>
+    <resource><id>4146717080</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/e/a/cbc37fe03af3991a41fd424e1e6d40a904d75.PNG</url></resource></object>
+    <object id="48_162173415" type="shape" x="37903.25812073585" y="39263.68646278636" r="7.892659810033986" s="2.1325129615460474" class="line3">
+      <geom type="line">
+        <sp>-82.37181138619724 0</sp>
+        <ep>82.37181138619724 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="49_162173415" type="text" x="37902.19138769001" y="39337.48096511638" r="7.892659918459693" s="0.5180108819947379" class="body">
+      <height>204.96</height>
+      <width>578.7968533117491</width>
+      <p>
+        <text><![CDATA[Z analizy wykresów  otrzymujemy informację o momencie stabilizacji liczby ludności - 200 lat od momentu rozpoczęcia badania - 2200r.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Ostateczna liczba ludności dla Wrocławia wyniesie ]]></text>
+        <text weight="bold"><![CDATA[616 670]]></text>
+        <text><![CDATA[, natomiast  liczba mieszkańców powiatu Wrocławskiego wzrośnie do ]]></text>
+        <text weight="bold"><![CDATA[284 900]]></text>
+        <text><![CDATA[.]]></text>
+      </p>
+    </object>
+    <object id="7_178700802" type="shape" x="-42998.83470700617" y="25705.136988726652" r="86.96496891408847" s="30.469854469856717" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="arrow">
+        <sp>104.3685729874507 -37.15841431387348</sp>
+        <ep>-104.36857298745066 -37.15841431387352</ep>
+        <b>-74.316828627747</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="10_178700802" type="button" x="-25721.86559251747" y="22799.80654885818" r="8.179193048391024e-31" s="1.0276921707731066" class="circle">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <type>circle</type>
+      <size>
+        <w>600</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="11_178700802" type="text" x="-25737.624220376092" y="22637.245114346737" r="1.1295229968692534e-30" s="1.1906891928535053" class="strong">
+      <height>46.59375</height>
+      <width>-251.7890625</width>
+      <p>
+        <text><![CDATA[Zależność liniowa ]]></text>
+      </p>
+    </object>
+    <object id="12_178700802" type="image" x="-25564.945841997716" y="22617.225467777105" r="1.0149635694709506e-30" s="0.4140883925250019">
+      <source w="47" h="170" bt="16.1" bl="73.45">2818829506<url>2818829506.swf</url></source>
+      <sourceUrl>prezidark_exclamation_blue.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>2818829506</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/d/3/6c7ea34b586d3ecf9dab47b621da4ec23e219.swf</url></resource></object>
+    <object id="13_178700802" type="text" x="-25712.70083160271" y="22840.70280665446" r="5.296687557660186e-31" s="0.9521829521830225" class="body">
+      <height>204.96</height>
+      <width>552</width>
+      <p align="center">
+        <text><![CDATA[Możemy założyć, że zależność pomiędzy liczbą ludności, ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[a liczbą aut w powiecie w przyszłości również będzie liniowa.]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[Zatem na podstawie predykcji liczby ludności możemy zaprognozować liczbę samochodów w powiecie.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+    </object>
+    <object id="14_178700802" type="image" x="-19387.70654885795" y="19848.420270271694" r="1.0000817499262463e-30" s="8.068805328469843">
+      <source w="818" h="352">4147383551<url>4147383551.png</url></source>
+      <sourceUrl>predykacja.png</sourceUrl>
+    <resource><id>4147383551</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/d/2/43c8f18cce8671ae426ce63cd65dbce57d18e.png</url></resource></object>
+    <object id="15_178700802" type="text" x="-19387.730353431758" y="21994.80727650887" r="1.1749818565409522e-30" s="11.44622632226023" class="body">
+      <height>87.84</height>
+      <width>552</width>
+      <p align="center">
+        <text><![CDATA[Według naszej prognozy, powiat wrocławski o liczności ]]></text>
+        <text weight="bold"><![CDATA[285900]]></text>
+        <text><![CDATA[ mieszkańców będzie w posiadaniu ]]></text>
+        <text weight="bold"><![CDATA[282540]]></text>
+        <text><![CDATA[ samochodów.]]></text>
+      </p>
+    </object>
+    <object id="16_178700802" type="shape" x="-28941.290964130094" y="24982.441487115062" r="1.405334930432688e-15" s="30.46985446985673" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="line">
+        <sp>-248.4613051236745 0</sp>
+        <ep>248.4613051236745 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="17_178700802" type="button" x="-45866.319542622914" y="65660.70343035825" r="-1.401587214540163e-15" s="36.22416618960681" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="18_178700802" type="text" x="-45637.819438672814" y="57301.513097717274" r="-1.401587214540164e-15" s="36.86852390852665" class="strong">
+      <height>46.59375</height>
+      <width>724.0853075129363</width>
+      <p align="center">
+        <text><![CDATA[Więcej samochodów = mniejsze prędkości]]></text>
+      </p>
+    </object>
+    <object id="22_178700802" type="button" x="-53489.710498964436" y="66408.30987526478" r="-1.401587214540163e-15" s="7.610145031955163" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="23_178700802" type="image" x="-53455.36273530008" y="66407.0005577172" r="-1.4015872145401642e-15" s="8.694690283119247">
+      <source w="561" h="420">4147476446<url>4147476446.png</url></source>
+      <sourceUrl>srednia%20predkosc.png</sourceUrl>
+    <resource><id>4147476446</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/3/8/b92ac02a96b7af0a50a0f5bd03034d0cf7b25.png</url></resource></object>
+    <object id="20_178700802" type="text" x="-49103.5035343071" y="62433.32692308152" r="-1.4015872145401636e-15" s="30.46985446985673" class="body">
+      <height>146.4</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA[Intuicja podpowiada, że im większa ilość samochodów w powiecie, tym większe problemy z prędkościami na wjazdach do miasta.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+    </object>
+    <object id="21_178700802" type="image" x="-38069.55987526266" y="60893.3138253683" r="-1.401587214540162e-15" s="2.6818960163761676">
+      <source w="992" h="876" bt="63" bl="-2.4">922673171<url>922673171.swf</url></source>
+      <sourceUrl>alert_wine_sticker.swf</sourceUrl>
+    <resource><id>922673171</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/a/2/328063d52cb98926e4039439088250f6d6812.swf</url></resource></object>
+    <object id="8_162054195" type="button" x="-39860.806444909365" y="65545.27213958779" r="-1.4015872145401638e-15" s="11.728942536156795" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>539.4943084716797</h>
+      </size>
+    </object>
+    <object id="25_178700802" type="shape" x="-41686.274661770134" y="65604.09702916973" r="90" s="15.54584411727384" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="line">
+        <sp>-131.52068191399857 0</sp>
+        <ep>131.52068191399854 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="26_178700802" type="shape" x="-38425.13895556728" y="65604.07883104654" r="90" s="15.54584411727384" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="line">
+        <sp>-131.52185252416788 0</sp>
+        <ep>131.52185252416783 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="27_178700802" type="shape" x="-40062.6284380964" y="65571.24128814801" r="-1.568617020547165e-14" s="15.54584411727384" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <geom type="line">
+        <sp>-284.8522129914446 0</sp>
+        <ep>284.8522129914446 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="32_178700802" type="text" x="-42996.5353430385" y="64790.90810811289" r="-1.4015872145401632e-15" s="25.1816979089725" class="body">
+      <height>29.28</height>
+      <width>-74.976</width>
+      <p>
+        <text color="3288169" weight="bold"><![CDATA[12.2012]]></text>
+      </p>
+    </object>
+    <object id="33_178700802" type="text" x="-40019.75410903888" y="64790.90810811289" r="-1.4015872145401632e-15" s="25.1816979089725" class="body">
+      <height>29.28</height>
+      <width>-75.168</width>
+      <p>
+        <text color="3288169" weight="bold"><![CDATA[12.2013]]></text>
+      </p>
+    </object>
+    <object id="34_178700802" type="text" x="-36968.28494270129" y="64790.884303539075" r="-1.4015872145401632e-15" s="25.1816979089725" class="body">
+      <height>29.28</height>
+      <width>-76.152</width>
+      <p>
+        <text color="3288169" weight="bold"><![CDATA[12.2014]]></text>
+      </p>
+    </object>
+    <object id="35_178700802" type="text" x="-42889.986070689236" y="66705.79563410056" r="-1.4015872145401632e-15" s="25.1816979089725" class="body">
+      <height>29.28</height>
+      <width>-83.47200000000001</width>
+      <p>
+        <text weight="bold"><![CDATA[55 km/h]]></text>
+      </p>
+    </object>
+    <object id="36_178700802" type="text" x="-40068.83461538755" y="66705.79563410056" r="-1.4015872145401632e-15" s="25.1816979089725" class="body">
+      <height>29.28</height>
+      <width>-102.40800000000002</width>
+      <p>
+        <text weight="bold"><![CDATA[53.5 km/h]]></text>
+      </p>
+    </object>
+    <object id="37_178700802" type="text" x="-36666.6135135162" y="66705.81943867431" r="-1.4015872145401632e-15" s="25.1816979089725" class="body">
+      <height>29.28</height>
+      <width>-100.15200000000002</width>
+      <p>
+        <text weight="bold"><![CDATA[51.5 km/h]]></text>
+      </p>
+    </object>
+    <object id="39_178700802" type="button" x="-39721.14501039793" y="71921.0444906498" r="-1.4015872145401632e-15" s="8.39608232702987" class="circle">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="15478355" gradStartColor="15478355" borderColor="15478355" color="15478355"/>
+      <type>circle</type>
+      <size>
+        <w>600</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="40_178700802" type="button" x="-53489.710498964436" y="71921.94906445431" r="-1.4015872145401636e-15" s="7.610176470972271" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="41_178700802" type="image" x="-53406.72775468167" y="71507.4638253691" r="-1.4015872145401636e-15" s="8.084785271791404">
+      <source w="561" h="417">4147550549<url>4147550549.png</url></source>
+      <sourceUrl>predkoscSamochodyPrognoza.png</sourceUrl>
+    <resource><id>4147550549</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/a/1/57622568c4f27727f39cc39cb2499890eeb91.png</url></resource></object>
+    <object id="42_178700802" type="text" x="-39904.3402494832" y="71021.92479002605" r="-1.4015872145401626e-15" s="10.664449064449855" class="body">
+      <height>29.28</height>
+      <width>0</width>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+    </object>
+    <object id="1_178750212" type="text" x="-53379.25727651121" y="73600.48097713638" r="-1.4015872145401636e-15" s="8.599719250383341" class="body">
+      <height>87.84</height>
+      <width>635.6507102897365</width>
+      <p>
+        <text><![CDATA[Zależność liniowa między liczbą samochodów, a prędkościami na wjazdach do Wrocławia powoduje, iż wartość prędkości wyniesie zero, gdy liczba samochodów będzie równa ]]></text>
+        <text weight="bold"><![CDATA[230230]]></text>
+        <text><![CDATA[.]]></text>
+      </p>
+    </object>
+    <object id="7_178750212" type="shape" x="-46400.80114960385" y="72444.65306200332" r="5.551129809482441e-15" s="30.46985446985673" class="line4">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3518377" gradStartColor="3518377" borderColor="3518377" color="3518377"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3518377" gradStartColor="3518377" borderColor="3518377" color="3518377"/>
+      <geom type="arrow">
+        <sp>-117.0831948141609 -7.469217083360717</sp>
+        <ep>117.08319481416088 -7.469217083360717</ep>
+        <b>14.938434166721436</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="4_162054195" type="button" x="65894.82141372634" y="114162.85582121421" r="18.46334734227818" s="5.774366417988252" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>1031.4139577171677</h>
+      </size>
+    </object>
+    <object id="69_162173415" type="image" x="66115.07839843738" y="113406.99303426432" r="18.46334734227817" s="6.951938336519829">
+      <source w="483" h="226">4133272784<url>4133272784.PNG</url></source>
+      <sourceUrl>LV.PNG</sourceUrl>
+    <resource><id>4133272784</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/a/e/c9a0730937997b570c1fce6be52296bab245f.PNG</url></resource></object>
+    <object id="70_162173415" type="image" x="63610.924785987336" y="115238.24630642042" r="18.46334734227817" s="5.230490804078846">
+      <source w="121" h="192">4133276777<url>4133276777.PNG</url></source>
+      <sourceUrl>wspolczynniki.PNG</sourceUrl>
+    <resource><id>4133276777</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/f/1/63af7b27d4142bda8b2c2435050d382c0c97f.PNG</url></resource></object>
+    <object id="71_162173415" type="text" x="65560.64686069473" y="115488.71638443199" r="18.46334734227823" s="11.071527361173331" class="body">
+      <height>29.28</height>
+      <width>-313.416</width>
+      <p>
+        <text><![CDATA[współczynnik rozwoju Wrocławia]]></text>
+      </p>
+    </object>
+    <object id="72_162173415" type="text" x="65648.58059279007" y="115914.98597355699" r="18.463347342278226" s="11.071527361173311" class="body">
+      <height>29.28</height>
+      <width>-350.4</width>
+      <p>
+        <text><![CDATA[współczynnik migracji Miasto-Powiat]]></text>
+      </p>
+    </object>
+    <object id="73_162173415" type="text" x="65385.93699505132" y="116213.56110542668" r="18.46334734227823" s="11.071527361173331" class="body">
+      <height>29.28</height>
+      <width>-324.648</width>
+      <p>
+        <text><![CDATA[współczynnik wyjazdów z Powiatu]]></text>
+      </p>
+    </object>
+    <object id="74_162173415" type="shape" x="65747.32560181996" y="114723.64571541327" r="18.46334714591562" s="17.398189112642505" class="line4">
+      <geom type="line">
+        <sp>-227.14374139420605 0</sp>
+        <ep>227.143741394206 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="82_162173415" type="image" x="25295.287629939543" y="37932.18367983643" r="7.892659918459693" s="18.494988069102597">
+      <source w="676" h="266">4145690171<url>4145690171.PNG</url></source>
+      <sourceUrl>LV_pojemnosc.PNG</sourceUrl>
+    <resource><id>4145690171</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/f/0/fe7e83b7700cc6b6e681382a1cdaa0b91598c.PNG</url></resource></object>
+    <object id="83_162173415" type="shape" x="24484.225478884622" y="41875.48904243283" r="7.892659690602912" s="30.6656248454879" class="line4">
+      <geom type="line">
+        <sp>-434.44043750540976 0</sp>
+        <ep>434.4404375054098 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="84_162173415" type="image" x="17698.37738530535" y="44535.972402982574" r="7.892659918459696" s="19.243693922084212">
+      <source w="128" h="284">4145695259<url>4145695259.PNG</url></source>
+      <sourceUrl>wpolczynniki_pojemnosc.PNG</sourceUrl>
+    <resource><id>4145695259</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/1/1/6a35526fe9980a4ad33547242d1589d778d8f.PNG</url></resource></object>
+    <object id="85_162173415" type="text" x="24454.644745896345" y="43389.981854315556" r="7.920587425685146" s="36.84244443629294" class="body">
+      <height>29.28</height>
+      <width>-308.52</width>
+      <p>
+        <text><![CDATA[pojemność środowiska, Wrocław]]></text>
+      </p>
+    </object>
+    <object id="86_162173415" type="text" x="24356.825748480147" y="44757.76822363721" r="7.920587425685147" s="36.84244443629294" class="body">
+      <height>29.28</height>
+      <width>-313.416</width>
+      <p>
+        <text><![CDATA[współczynnik rozwoju Wrocławia]]></text>
+      </p>
+    </object>
+    <object id="87_162173415" type="text" x="24836.02685908319" y="46236.66618253666" r="7.892659918459696" s="36.842444436292986" class="body">
+      <height>29.28</height>
+      <width>-350.4</width>
+      <p>
+        <text><![CDATA[współczynnik migracji Miasto-Powiat]]></text>
+      </p>
+    </object>
+    <object id="88_162173415" type="text" x="24184.801038078804" y="47468.43837540952" r="7.892659918459697" s="36.84244443629299" class="body">
+      <height>29.28</height>
+      <width>-324.648</width>
+      <p>
+        <text><![CDATA[współczynnik wyjazdów z Powiatu]]></text>
+      </p>
+    </object>
+    <object id="9_162054195" type="button" x="-87656.86756757402" y="100003.08596674335" r="-1.9559010344255076e-46" s="21.37543069393367" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="10_162054195" type="text" x="-87719.82614068133" y="95613.95942204002" r="-2.0348920942745368e-46" s="46.961537663771374" class="strong">
+      <height>46.59375</height>
+      <width>-100.9453125</width>
+      <p>
+        <text><![CDATA[Wnioski]]></text>
+      </p>
+    </object>
+    <object id="11_162054195" type="text" x="-87623.93259990489" y="101242.06228950729" r="-2.5598915375368622e-46" s="37.33035573020178" class="body">
+      <height>204.96</height>
+      <width>337.0543273945843</width>
+      <p align="center">
+        <text><![CDATA[tworzenie nowych dróg]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[zwiększanie przepustowości]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[rozwój komunikacji miejskiej]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[nowe rozwiązania]]></text>
+      </p>
+    </object>
+    <object id="13_162054195" type="text" x="-86884.43295218941" y="76936.67771310337" r="-9.142040691491219e-63" s="60.93970893971346" class="strong">
+      <height>46.59375</height>
+      <width>327.7829089814912</width>
+      <p>
+        <text><![CDATA[Jak temu zapobiec?]]></text>
+      </p>
+    </object>
+    <object id="20_162054195" type="shape" x="-91171.50546250521" y="88566.57265330134" r="29.999999999999993" s="21.76418176418339" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <geom type="arrow">
+        <sp>-65.79059876551183 -8.745118445286096</sp>
+        <ep>65.79059876551185 -8.745118445286096</ep>
+        <b>17.49023689057219</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="21_162054195" type="shape" x="-85613.1833958805" y="88564.04891841268" r="-30.000000000000036" s="21.76418176418339" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <geom type="arrow">
+        <sp>65.0924428550774 -8.37472964122267</sp>
+        <ep>-65.0924428550774 -8.374729641222673</ep>
+        <b>-16.749459282445343</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="15_162054195" type="text" x="-39714.51830564189" y="72007.3933921051" r="-1.4015872145401632e-15" s="12.903983367984326" class="body">
+      <height>292.79999999999995</height>
+      <width>331.5344276127713</width>
+      <p align="center">
+        <text><![CDATA[230230 samochodów ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[odpowiada 244430 osobom mieszkającym w powiecie, a według prognozy taką liczność populacja powiatu osiągnie za około 55 lat.]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[Dojdzie do zupełnego zakorkowania dróg ]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[dojazdowych.]]></text>
+      </p>
+    </object>
+    <object id="17_162054195" type="text" x="-92789.88256700289" y="85222.78603145931" r="2.4930950811699433e-31" s="7.44263775970491" class="body">
+      <height>175.68</height>
+      <width>366.48</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[poszerzenie dróg zmniejsza korki tylko chwilowo]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[zwężenie dróg zwiększa ich przepustowość dzięki zmniejszeniu prędkości aut, a co za tym idzie zagęszczeniu ich]]></text>
+      </p>
+    </object>
+    <object id="18_162054195" type="text" x="-88502.12037422691" y="85064.04958420583" r="1.5881965710730133e-31" s="7.688393380052976" class="body">
+      <height>117.12</height>
+      <width>367.85</width>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[nowe drogi nie zmniejszają czasu przejazdu]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[dobudowanie dróg pogarsza sytuację dla wszystkich kierowców]]></text>
+      </p>
+    </object>
+    <object id="22_162054195" type="button" x="-88510.4757796323" y="86376.70519751153" r="1.5881965710730131e-31" s="1.6788027579861597" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="24_162054195" type="image" x="-88531.70945946599" y="86415.81611227246" r="1.5881965710730142e-31" s="1.7851398691523062">
+      <source w="450" h="450">4150315355<url>4150315355.png</url></source>
+      <sourceUrl>Braess2.png</sourceUrl>
+    <resource><id>4150315355</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/f/b/0288041875c1f8c6d4b22abaf4727e8ea709b.png</url></resource></object>
+    <object id="23_162054195" type="text" x="-88531.70945946599" y="86009.45299376933" r="1.588196571073013e-31" s="1.9043659043660464" class="strong">
+      <height>46.59375</height>
+      <width>-59.71875</width>
+      <p>
+        <text><![CDATA[Jak?]]></text>
+      </p>
+    </object>
+    <object id="25_162054195" type="text" x="-84258.27234788082" y="85163.23020803828" r="7.495534371162143e-31" s="7.688393380052976" class="body">
+      <height>146.4</height>
+      <width>411.5492847782989</width>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[poprawiając przepustowość dróg zachęcamy do korzystania z nich]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[więcej osób wybiera samchód zamiast komunikacji miejskiej]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[komuniacja staje się droższa i gorsza]]></text>
+      </p>
+    </object>
+    <object id="26_162054195" type="button" x="-88250.17276507927" y="89592.51268191928" r="1.5225231209284422e-31" s="1.0331431184248938" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>785.1296631680684</w>
+        <h>588.8472473760514</h>
+      </size>
+    </object>
+    <object id="27_162054195" type="text" x="-88250.15032181414" y="89353.29805075891" r="1.5225231209284424e-31" s="1.1824613969277102" class="strong">
+      <height>93.1875</height>
+      <width>552</width>
+      <p align="center">
+        <text><![CDATA[Skutki próby zwiększenia przepustowości drogi:]]></text>
+      </p>
+    </object>
+    <object id="28_162054195" type="text" x="-88271.08423364197" y="89643.68308221769" r="1.5225231209284422e-31" s="1.4307782902825295" class="body">
+      <height>263.52</height>
+      <width>428.5</width>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[kierowcy używający dotychczas dróg alternatywnych zaczynają korzystać z rozbudowanej drogi]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[kierowcy do tej pory jeżdżący poza godzinami szczytu zaczynają jeździć w godzinach szczytu]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[użytkownicy transportu publicznego rezygnują z niego na rzecz własnego samochodu]]></text>
+      </p>
+    </object>
+    <object id="30_162054195" type="button" x="-88588.60239085894" y="90557.28825364493" r="1.5225231209284422e-31" s="0.2016188258202651" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="31_162054195" type="text" x="-88588.34054054711" y="90570.26100247545" r="1.5225231209284422e-31" s="0.2380457380457558" class="strong">
+      <height>93.1875</height>
+      <width>552</width>
+      <p align="center">
+        <text color="16777215"><![CDATA[wzrost średniej prędkości ]]></text>
+      </p>
+      <p align="center">
+        <text color="16777215"><![CDATA[na głównych dojazdach]]></text>
+      </p>
+    </object>
+    <object id="32_162054195" type="text" x="-88591.77813125179" y="90535.06632961766" r="1.5225231209284435e-31" s="1.0938137358377151" class="strong">
+      <height>46.59375</height>
+      <width>-83.9765625</width>
+      <p>
+        <text color="16777215"><![CDATA[2km/h]]></text>
+      </p>
+    </object>
+    <object id="33_162054195" type="shape" x="-88368.5179021782" y="88084.38764767908" r="90" s="21.764181764183384" class="line3">
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <style gradEndAlpha="1" gradStartAlpha="1" gradEndColor="3288169" gradStartColor="3288169" borderColor="3288169" color="3288169"/>
+      <geom type="arrow">
+        <sp>-30 0</sp>
+        <ep>30 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="35_162054195" type="image" x="-93645.95550936242" y="102188.27442828196" r="-1.9559010344255084e-46" s="4.771930577612543">
+      <source w="326" h="249">606552385<url>606552385.swf</url></source>
+      <sourceUrl>yes_g.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606552385</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/4/4/5e219287363c38ddd4321a453e3bd743b1d86.swf</url></resource></object>
+    <object id="36_162054195" type="image" x="-91836.40322246" y="104594.55977131748" r="-1.9559010344255084e-46" s="4.771930577612543">
+      <source w="326" h="249">606552385<url>606552385.swf</url></source>
+      <sourceUrl>yes_g.swf</sourceUrl>
+      <extra>
+        <fixed_avm1_pos>1</fixed_avm1_pos>
+      </extra>
+    <resource><id>606552385</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/4/4/5e219287363c38ddd4321a453e3bd743b1d86.swf</url></resource></object>
+    <object id="37_162054195" type="image" x="-92606.33835759517" y="97974.69823285544" r="-1.9559010344255072e-46" s="5.945513080915838">
+      <source w="199" h="199" bt="86" bl="138.95">750604809<url>750604809.swf</url></source>
+      <sourceUrl>no_g.swf</sourceUrl>
+    <resource><id>750604809</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/e/e/7fbb346ab90bbb2fb4bbc977fda7fcfd5a1b0.swf</url></resource></object>
+    <object id="38_162054195" type="image" x="-93551.87983368673" y="100162.57661123399" r="-1.9559010344255072e-46" s="5.945513080915838">
+      <source w="199" h="199" bt="86" bl="138.95">750604809<url>750604809.swf</url></source>
+      <sourceUrl>no_g.swf</sourceUrl>
+    <resource><id>750604809</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/e/e/7fbb346ab90bbb2fb4bbc977fda7fcfd5a1b0.swf</url></resource></object>
+    <object id="6_162054195" type="button" x="-140277.11600832638" y="96994.59251559967" r="-6.542254577733322e-47" s="33.00041709652779" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="7_162054195" type="text" x="-140369.13752248883" y="89951.30633178898" r="-6.542254577733326e-47" s="61.202762752573484" class="strong">
+      <height>46.59375</height>
+      <width>-202.5703125</width>
+      <p>
+        <text><![CDATA[Przygotowały:]]></text>
+      </p>
+    </object>
+    <object id="14_162054195" type="text" x="-140888.95" y="98283" r="-6.542254577733326e-47" s="43.981240878288276" class="strong">
+      <height>232.96875</height>
+      <width>660.8626843302316</width>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[Weronika Bielska]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[Ewa Boryczka]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[Joanna Kochel]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[Joanna Kuprowska]]></text>
+      </p>
+      <p align="center" listType="bullet" indent="1">
+        <text><![CDATA[Beata Szczypek]]></text>
+      </p>
+    </object>
+    <object id="16_162054195" type="button" x="-171122.2" y="109594.8" r="-6.542254577733322e-47" s="13.743313400243546" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="34_162054195" type="text" x="-171476.40000000002" y="106699.03000000001" r="-6.542254577733322e-47" s="32" class="strong">
+      <height>46.59375</height>
+      <width>-94.5234375</width>
+      <p>
+        <text><![CDATA[źródła:]]></text>
+      </p>
+    </object>
+    <object id="39_162054195" type="text" x="-171281.33511674192" y="110370.41272727273" r="-6.542254577733322e-47" s="19.86948233789296" class="body">
+      <height>234.24</height>
+      <width>486.9747934311455</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[korkowo.pl]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[urbnews.pl]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[stat.gov.pl/bdl/]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[deltami.edu.pl]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Braess, "On a Paradox of Traffic Planning"]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Mogridge, Martin J. H., "Travel in towns: jam yesterday, jam today and jam tomorrow?"]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[wikipedia.org]]></text>
+      </p>
+    </object>
+  </zui-table>
+  <path>
+    <s>
+      <eagle o="122_20166879"/>
+    </s>
+    <s>
+      <eagle o="17"/>
+    </s>
+    <s>
+      <eagle o="15"/>
+    </s>
+    <s>
+      <eagle o="0_32911991"/>
+    </s>
+    <s>
+      <eagle o="62_13415665"/>
+    </s>
+    <s>
+      <eagle o="20"/>
+    </s>
+    <s>
+      <eagle o="21"/>
+    </s>
+    <s>
+      <eagle o="7"/>
+    </s>
+    <s>
+      <eagle o="9"/>
+    </s>
+    <s>
+      <eagle o="25"/>
+    </s>
+    <s>
+      <eagle o="25_20166879"/>
+    </s>
+    <s>
+      <eagle o="0_162054195"/>
+    </s>
+    <s>
+      <eagle o="23_20166879"/>
+    </s>
+    <s>
+      <eagle o="0_162173415"/>
+    </s>
+    <s>
+      <eagle o="7_162173415"/>
+    </s>
+    <s>
+      <eagle o="11_162173415"/>
+    </s>
+    <s>
+      <eagle o="4_162054195"/>
+    </s>
+    <s>
+      <eagle o="14_162173415"/>
+    </s>
+    <s>
+      <eagle o="32_162173415"/>
+    </s>
+    <s>
+      <eagle o="35_162173415"/>
+    </s>
+    <s>
+      <eagle o="5_162054195"/>
+    </s>
+    <s>
+      <eagle o="15_162173415"/>
+    </s>
+    <s>
+      <eagle o="54_162173415"/>
+    </s>
+    <s>
+      <eagle o="17_162173415"/>
+    </s>
+    <s>
+      <eagle o="18_162173415"/>
+    </s>
+    <s>
+      <eagle o="22_20166879"/>
+    </s>
+    <s>
+      <eagle o="0_178700802"/>
+    </s>
+    <s>
+      <eagle o="1_178700802"/>
+    </s>
+    <s>
+      <eagle o="10_178700802"/>
+    </s>
+    <s>
+      <eagle o="6_178700802"/>
+    </s>
+    <s>
+      <eagle o="17_178700802"/>
+    </s>
+    <s>
+      <eagle o="8_162054195"/>
+    </s>
+    <s>
+      <eagle o="22_178700802"/>
+    </s>
+    <s>
+      <eagle o="40_178700802"/>
+    </s>
+    <s>
+      <eagle o="39_178700802"/>
+    </s>
+    <s>
+      <eagle o="12_162054195"/>
+    </s>
+    <s>
+      <eagle o="2_178794639"/>
+    </s>
+    <s>
+      <eagle o="12_178794639"/>
+    </s>
+    <s>
+      <eagle o="19_162054195"/>
+    </s>
+    <s>
+      <eagle o="22_162054195"/>
+    </s>
+    <s>
+      <eagle o="22_178794639"/>
+    </s>
+    <s>
+      <eagle o="26_162054195"/>
+    </s>
+    <s>
+      <eagle o="29_162054195"/>
+    </s>
+    <s>
+      <eagle o="30_162054195"/>
+    </s>
+    <s>
+      <eagle o="9_162054195"/>
+    </s>
+    <s>
+      <eagle o="6_162054195"/>
+    </s>
+    <s>
+      <eagle o="16_162054195"/>
+    </s>
+    <s>
+      <eagle o="122_20166879"/>
+    </s>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('Arsenal-Regular.keg');
+	fontFamily: body;
+	font-class: body;
+	font-style: normal;
+	font-weight: normal;
+	font-family: Arsenal;
+}
+
+@font-face
+{
+	src: url('Cabin-Bold.keg');
+	fontFamily: head;
+	font-class: head;
+	font-style: normal;
+	font-weight: bold;
+	font-family: Cabin;
+}
+
+@font-face
+{
+	src: url('FromWhereYouAre-Regular.keg');
+	fontFamily: strong;
+	font-class: strong;
+	font-style: normal;
+	font-weight: normal;
+	font-family: FromWhereYouAre;
+}
+
+@font-face
+{
+	src: url('Arsenal-Italic.keg');
+	font-style: italic;
+	font-weight: normal;
+	font-family: Arsenal;
+}
+
+@font-face
+{
+	src: url('Arsenal-Bold.keg');
+	font-style: normal;
+	font-weight: bold;
+	font-family: Arsenal;
+}
+
+@font-face
+{
+	src: url('Arsenal-BoldItalic.keg');
+	font-style: italic;
+	font-weight: bold;
+	font-family: Arsenal;
+}
+
+@font-face
+{
+	src: url('Cabin-BoldItalic.keg');
+	font-style: italic;
+	font-weight: bold;
+	font-family: Cabin;
+}
+
+@font-face
+{
+	src: url('Cabin-Italic.keg');
+	font-style: italic;
+	font-weight: normal;
+	font-family: Cabin;
+}
+
+@font-face
+{
+	src: url('Cabin-Regular.keg');
+	font-style: normal;
+	font-weight: normal;
+	font-family: Cabin;
+}
+
+.line1
+{
+	color: #2f4545;
+	gradEndColor: #2f4545;
+	gradStartColor: #2f4545;
+}
+
+.line2
+{
+	borderColor: #fff;
+	color: #f00;
+	gradEndColor: #f00;
+	gradStartColor: #f00;
+}
+
+.line3
+{
+	color: #becccc;
+	gradEndColor: #becccc;
+	gradStartColor: #becccc;
+}
+
+.line4
+{
+	color: #3fc0ff;
+	gradEndColor: #3fc0ff;
+	gradStartColor: #3fc0ff;
+}
+
+.line5
+{
+	color: #b4e843;
+	gradEndColor: #b4e843;
+	gradStartColor: #b4e843;
+}
+
+.poly1
+{
+	color: #fff;
+	gradEndColor: #2f4545;
+	gradStartColor: #2f4545;
+}
+
+.poly2
+{
+	color: #fff;
+	gradEndColor: #ff0303;
+	gradStartColor: #ff0303;
+}
+
+.poly3
+{
+	color: #fff;
+	gradEndColor: #becccc;
+	gradStartColor: #becccc;
+}
+
+.poly4
+{
+	color: #fff;
+	gradEndColor: #00e3e3;
+	gradStartColor: #00e3e3;
+}
+
+.poly5
+{
+	color: #fff;
+	gradEndColor: #b4e843;
+	gradStartColor: #b4e843;
+}
+
+Background
+{
+	gradEnd: #fff;
+	gradStart: #fff;
+}
+
+Grid
+{
+	color: #b8b8b8;
+}
+
+ZArrow
+{
+	color: #becccc;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+}
+
+ZCircle
+{
+	borderAlpha: 0;
+	borderThickness: 0;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+ZCurveLine
+{
+	color: #becccc;
+}
+
+ZFrame.bracket
+{
+	borderAlpha: 0;
+	borderThickness: 0;
+	gradEndAlpha: 1;
+	gradEndColor: #b3ada4;
+	gradStartAlpha: 1;
+	gradStartColor: #b3ada4;
+	padding: 1.03;
+	thickness: 10;
+}
+
+ZFrame.circle
+{
+	color: #becccc;
+	gradEndAlpha: 1;
+	gradEndColor: #becccc;
+	gradStartAlpha: 1;
+	gradStartColor: #becccc;
+	padding: 1.03;
+	thickness: 8;
+}
+
+ZFrame.roundrect
+{
+	borderAlpha: 0;
+	borderThickness: 0;
+	gradEndColor: #c5d1d0;
+	gradStartColor: #c5d1d0;
+	padding: 1.03;
+	radius: 3;
+}
+
+ZLabel
+{
+	lockTintAlpha: 0.15;
+	padding: 1.2;
+}
+
+ZLabel.body
+{
+	color: #575444;
+	fontFamily: body;
+}
+
+ZLabel.body-background
+{
+	background-alpha: 0.9;
+	background-color: #ececec;
+	background-padding: 4;
+}
+
+ZLabel.head
+{
+	color: #2f4545;
+	fontFamily: head;
+}
+
+ZLabel.head-background
+{
+	background-alpha: 0.9;
+	background-color: #fa6d73;
+	background-padding: 4;
+}
+
+ZLabel.strong
+{
+	color: #2ba7a7;
+	fontFamily: strong;
+}
+
+ZLabel.strong-background
+{
+	background-alpha: 0.8;
+	background-color: #000;
+	background-padding: 4;
+}
+
+ZLine
+{
+	color: #becccc;
+}
+
+ZMarker
+{
+	alpha: 0.3;
+	color: #00e1ff;
+}
+
+ZPath
+{
+	alpha: 1;
+	color: #40abe6;
+	textColor: #fff;
+	thickness: 3;
+}
+
+ZPath Ball.base
+{
+	alpha: 1;
+	fillColor: #40abe6;
+	radius: 12;
+}
+
+ZPath Ball.mid
+{
+	alpha: .5;
+	fillColor: #40abe6;
+	radius: 8;
+}
+
+ZPoly
+{
+	borderAlpha: 0;
+	borderThickness: 0;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+]]></style>
+  <hash>49b2b9b2</hash>
+<sync><oid>fa5npicfxzzi</oid><title>dokad-zmierzasz-wrocawiu</title><hash>49b2b9b2</hash></sync><config>VQAXDkDAW/d6n5iQ3O2JCVJJQvIHdZICTP/TwZoOCLbER4XY55JDzia/ZzJZYip1IMb8eC+Iwz9+C/88K6G2PnZ7a/Jh2awt7rbMlVBNh9wWpy9MUoptdcPyIy8jcQ++t7ii8slhYSdG02K0nGFmHsbt4Dw3dJVNmxvSfrxLtKSzicUv4WCeUVwWxR1Pcu9JyPFCLUw5Wvl3DcRRzJLs0h3KwvthcfObdJqeUE6l1+BMOxuF9WElqKriAegR+F4SA5EsCwR8BIZJ2oMTZvDsISjoTTEqfRjMP7+c52WRFMaStqacPhBwMHqIzihfUJKkGVjyWjM8vQLvPZxVvNgmQw==</config></zuiprezi>
